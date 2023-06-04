@@ -14,6 +14,13 @@
       "dependencies": {},
       "url": "https://package.openupm.com"
     },
+    "com.svermeulen.extenject": {
+      "version": "https://github.com/divniy/Extenject.git?path=UnityProject/Assets/Plugins/Zenject#9.3.2",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "19442ad04e28e2ba5a1578ed3937cbe01aeee14b"
+    },
     "com.unity.collab-proxy": {
       "version": "2.0.4",
       "depth": 0,
