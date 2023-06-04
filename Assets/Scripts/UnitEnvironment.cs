@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Ziggurat
+namespace Diwide.Ziggurat
 {
 	[RequireComponent(typeof(Animator))]
 	public class UnitEnvironment : MonoBehaviour
