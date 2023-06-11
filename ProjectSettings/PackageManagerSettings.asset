@@ -33,6 +33,8 @@ MonoBehaviour:
     - com.dbrizov.naughtyattributes
     - com.openupm
     - com.rotaryheart.serializabledictionarylite
+    - com.zor.behavior-tree
+    - com.zor.simple-blackboard
     m_IsDefault: 0
     m_Capabilities: 0
     m_ConfigSource: 4
