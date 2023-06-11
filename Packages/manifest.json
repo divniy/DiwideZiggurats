@@ -43,7 +43,9 @@
     "com.unity.modules.video": "1.0.0",
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
-    "com.unity.modules.xr": "1.0.0"
+    "com.unity.modules.xr": "1.0.0",
+    "com.zor.simple-blackboard": "1.5.0",
+    "com.zor.behavior-tree": "1.0.0"
   },
   "scopedRegistries": [
     {
@@ -52,7 +54,9 @@
       "scopes": [
         "com.dbrizov.naughtyattributes",
         "com.openupm",
-        "com.rotaryheart.serializabledictionarylite"
+        "com.rotaryheart.serializabledictionarylite",
+        "com.zor.behavior-tree",
+        "com.zor.simple-blackboard"
       ]
     }
   ]
