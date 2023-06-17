@@ -11,6 +11,7 @@ public class SetTargetPositionDecorator : DecoratorNode
     }
 
     protected override void OnStop() {
+        context.animator.SetFloat("Movement", 0f);
     }
 
     protected override State OnUpdate()
