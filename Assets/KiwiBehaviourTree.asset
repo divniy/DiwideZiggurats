@@ -27,13 +27,16 @@ MonoBehaviour:
   - rid: 3539284211612254221
   - rid: 3539284211612254222
   - rid: 3539284211612254223
-  - rid: 3539284211612254224
+  - rid: 3539284211612254225
+  - rid: 3539284211612254226
+  - rid: 3539284211612254227
+  - rid: 3539284211612254228
   treeState: 0
   blackboard:
     moveToPosition: {x: 0, y: 0, z: 0}
     target: {fileID: 0}
-  viewPosition: {x: 590.5, y: 609, z: 0}
-  viewScale: {x: 1, y: 1, z: 1}
+  viewPosition: {x: 627.5, y: 311.5, z: 0}
+  viewScale: {x: 0.4971768, y: 0.4971768, z: 1}
   references:
     version: 2
     RefIds:
@@ -163,7 +166,7 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: 7c25e709d593e4a0f911b220915ad6a9
-        position: {x: -438, y: -580.5}
+        position: {x: -762.6243, y: -569.5}
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
@@ -171,29 +174,27 @@ MonoBehaviour:
         drawGizmos: 0
         children:
         - rid: 3539284211612254221
-        - rid: 3539284211612254222
-        - rid: 3539284211612254223
-        - rid: 3539284211612254224
+        - rid: 3539284211612254225
     - rid: 3539284211612254221
       type: {class: CheckEnemyInAttackRange, ns: , asm: Assembly-CSharp}
       data:
         state: 0
         started: 0
         guid: 68275d00660304068998b3fbc175866a
-        position: {x: -663.99994, y: -455.5098}
+        position: {x: -988.6243, y: -444.50006}
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
         description: 
         drawGizmos: 0
-        attackRange: 1.5
+        attackRange: 1.6
     - rid: 3539284211612254222
       type: {class: Log, ns: TheKiwiCoder, asm: Assembly-CSharp}
       data:
         state: 0
         started: 0
         guid: 2c23cfb35e4cc40cb8fca595657e54b4
-        position: {x: -513, y: -385}
+        position: {x: -788.4999, y: -195.91324}
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
@@ -206,23 +207,69 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: 893677d8a2aab4d63966054d9c1598ff
-        position: {x: -391.15747, y: -455.50003}
+        position: {x: -658.806, y: -68.022766}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          target: {fileID: 0}
+        description: 
+        drawGizmos: 0
+        triggerName: Fast
+    - rid: 3539284211612254225
+      type: {class: Repeat, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: f2dd6a5f51a39494ca78669cfe6c6337
+        position: {x: -612.5, y: -444.5}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          target: {fileID: 0}
+        description: 
+        drawGizmos: 0
+        child:
+          rid: 3539284211612254226
+        restartOnSuccess: 1
+        restartOnFailure: 0
+    - rid: 3539284211612254226
+      type: {class: Sequencer, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: ab6c01e80cb004c4c955e1f995b0b5ad
+        position: {x: -612.4999, y: -329.99994}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          target: {fileID: 0}
+        description: 
+        drawGizmos: 0
+        children:
+        - rid: 3539284211612254222
+        - rid: 3539284211612254227
+    - rid: 3539284211612254227
+      type: {class: RandomSelector, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 803f683909aff42779d5f6651e6b8214
+        position: {x: -556.2379, y: -196}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          target: {fileID: 0}
+        description: 
+        drawGizmos: 0
+        children:
+        - rid: 3539284211612254223
+        - rid: 3539284211612254228
+    - rid: 3539284211612254228
+      type: {class: AttackTask, ns: , asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 6ab86db27cc25432eb319d6580925c33
+        position: {x: -435.5337, y: -68}
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
         description: 
         drawGizmos: 0
         triggerName: Strong
-    - rid: 3539284211612254224
-      type: {class: Log, ns: TheKiwiCoder, asm: Assembly-CSharp}
-      data:
-        state: 0
-        started: 0
-        guid: 97bcdf67cdae448d48f60c4ac385de41
-        position: {x: -288, y: -385}
-        blackboard:
-          moveToPosition: {x: 0, y: 0, z: 0}
-          target: {fileID: 0}
-        description: 
-        drawGizmos: 0
-        message: Attack complete
