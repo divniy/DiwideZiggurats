@@ -31,12 +31,13 @@ MonoBehaviour:
   - rid: 3539284211612254226
   - rid: 3539284211612254228
   - rid: 3539284211612254229
+  - rid: 3539284211612254231
   treeState: 0
   blackboard:
     moveToPosition: {x: 0, y: 0, z: 0}
     target: {fileID: 0}
-  viewPosition: {x: 664, y: 293.5, z: 0}
-  viewScale: {x: 0.7561437, y: 0.7561437, z: 1}
+  viewPosition: {x: 305.5, y: 545, z: 0}
+  viewScale: {x: 0.4971768, y: 0.4971768, z: 1}
   references:
     version: 2
     RefIds:
@@ -46,14 +47,14 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: 1a76ebaf-d8ca-427f-8414-5130366ffeaf
-        position: {x: 312.5, y: -894.12}
+        position: {x: 312.5, y: -986}
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
         description: 
         drawGizmos: 0
         child:
-          rid: 3539284211612254215
+          rid: 3539284211612254231
     - rid: 3539284203217092611
       type: {class: AnimateMoveToPosition, ns: Diwide.Ziggurat.BehaviourTree.Actions, asm: Assembly-CSharp}
       data:
@@ -276,3 +277,19 @@ MonoBehaviour:
         probabilityMasses:
         - 90
         - 10
+    - rid: 3539284211612254231
+      type: {class: Repeat, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 94b5d689c2e0e40e2b8f060d6ad814b7
+        position: {x: 312.5, y: -862}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          target: {fileID: 0}
+        description: 
+        drawGizmos: 0
+        child:
+          rid: 3539284211612254215
+        restartOnSuccess: 1
+        restartOnFailure: 0

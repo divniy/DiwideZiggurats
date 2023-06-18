@@ -34,6 +34,9 @@ public class AttackTask : ActionNode
 
     protected override State OnUpdate()
     {
+        if (blackboard.target == null)
+            return State.Failure;
+        
         if (_isAnimating) 
             return State.Running;
         
