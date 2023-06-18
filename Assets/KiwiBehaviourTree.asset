@@ -32,12 +32,18 @@ MonoBehaviour:
   - rid: 3539284211612254228
   - rid: 3539284211612254229
   - rid: 3539284211612254231
+  - rid: 3539284211612254232
+  - rid: 3539284211612254233
+  - rid: 3539284211612254234
+  - rid: 3539284211612254235
+  - rid: 3539284211612254237
+  - rid: 3539284211612254238
   treeState: 0
   blackboard:
     moveToPosition: {x: 0, y: 0, z: 0}
     target: {fileID: 0}
-  viewPosition: {x: 305.5, y: 545, z: 0}
-  viewScale: {x: 0.4971768, y: 0.4971768, z: 1}
+  viewPosition: {x: 127.5, y: 334, z: 0}
+  viewScale: {x: 0.43232766, y: 0.43232766, z: 1}
   references:
     version: 2
     RefIds:
@@ -61,7 +67,7 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: 4e6387abd40ec4cd2bb0574b5efe266a
-        position: {x: 487.5, y: -569.5}
+        position: {x: 576.12524, y: -441.00006}
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
@@ -133,7 +139,7 @@ MonoBehaviour:
         children:
         - rid: 3539284211612254220
         - rid: 3539284211612254210
-        - rid: 3539284203217092611
+        - rid: 3539284211612254232
     - rid: 3539284211612254218
       type: {class: SetTargetPositionDecorator, ns: , asm: Assembly-CSharp}
       data:
@@ -293,3 +299,94 @@ MonoBehaviour:
           rid: 3539284211612254215
         restartOnSuccess: 1
         restartOnFailure: 0
+    - rid: 3539284211612254232
+      type: {class: Sequencer, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 1495b6a87bc3d4b6c800f57ee9c43141
+        position: {x: 788.99976, y: -569.5}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          target: {fileID: 0}
+        description: 
+        drawGizmos: 0
+        children:
+        - rid: 3539284203217092611
+        - rid: 3539284211612254233
+    - rid: 3539284211612254233
+      type: {class: Repeat, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 71c4b8721041c4f7d8bbe066ae5425d7
+        position: {x: 1070.5, y: -444.49994}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          target: {fileID: 0}
+        description: 
+        drawGizmos: 0
+        child:
+          rid: 3539284211612254234
+        restartOnSuccess: 1
+        restartOnFailure: 0
+    - rid: 3539284211612254234
+      type: {class: Sequencer, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 1e2acc5d9697642909e207dc5540ec24
+        position: {x: 1070.5, y: -287.69388}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          target: {fileID: 0}
+        description: 
+        drawGizmos: 0
+        children:
+        - rid: 3539284211612254235
+        - rid: 3539284211612254238
+        - rid: 3539284211612254237
+    - rid: 3539284211612254235
+      type: {class: Wait, ns: TheKiwiCoder, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 6461bc5199d9c4cb4bef756014bf4ffd
+        position: {x: 864.22766, y: -100.93741}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          target: {fileID: 0}
+        description: 
+        drawGizmos: 0
+        duration: 2
+    - rid: 3539284211612254237
+      type: {class: AnimateMoveToPosition, ns: Diwide.Ziggurat.BehaviourTree.Actions, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: b018998f84f374b1ca9df35940c3eda4
+        position: {x: 1275.2672, y: -101}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          target: {fileID: 0}
+        description: 
+        drawGizmos: 0
+        speed: 5
+        stoppingDistance: 0.1
+        updateRotation: 1
+        acceleration: 40
+        tolerance: 1
+    - rid: 3539284211612254238
+      type: {class: RandomPositionInsideCircle, ns: Diwide.Ziggurat.BehaviourTree.Actions, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 20593caf25d8d456488c56123cdc47ec
+        position: {x: 1041.687, y: -101}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          target: {fileID: 0}
+        description: 
+        drawGizmos: 0
+        circleRadius: 7
+        heightOffset: 0
