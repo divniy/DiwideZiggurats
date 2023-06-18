@@ -26,11 +26,8 @@ MonoBehaviour:
   - rid: 3539284211612254220
   - rid: 3539284211612254221
   - rid: 3539284211612254222
-  - rid: 3539284211612254223
   - rid: 3539284211612254225
   - rid: 3539284211612254226
-  - rid: 3539284211612254228
-  - rid: 3539284211612254229
   - rid: 3539284211612254231
   - rid: 3539284211612254232
   - rid: 3539284211612254233
@@ -38,12 +35,15 @@ MonoBehaviour:
   - rid: 3539284211612254235
   - rid: 3539284211612254237
   - rid: 3539284211612254238
+  - rid: 3539284359028932609
+  - rid: 3539284359028932610
+  - rid: 3539284359028932611
   treeState: 0
   blackboard:
     moveToPosition: {x: 0, y: 0, z: 0}
     target: {fileID: 0}
-  viewPosition: {x: 127.5, y: 334, z: 0}
-  viewScale: {x: 0.43232766, y: 0.43232766, z: 1}
+  viewPosition: {x: 326, y: 209.5, z: 0}
+  viewScale: {x: 0.25, y: 0.25, z: 1}
   references:
     version: 2
     RefIds:
@@ -208,19 +208,6 @@ MonoBehaviour:
         description: 
         drawGizmos: 0
         message: Attack Target
-    - rid: 3539284211612254223
-      type: {class: AttackTask, ns: , asm: Assembly-CSharp}
-      data:
-        state: 0
-        started: 0
-        guid: 893677d8a2aab4d63966054d9c1598ff
-        position: {x: -563.6476, y: -50}
-        blackboard:
-          moveToPosition: {x: 0, y: 0, z: 0}
-          target: {fileID: 0}
-        description: Fast attack
-        drawGizmos: 0
-        triggerName: Fast
     - rid: 3539284211612254225
       type: {class: Repeat, ns: TheKiwiCoder, asm: Assembly-CSharp}
       data:
@@ -251,38 +238,7 @@ MonoBehaviour:
         drawGizmos: 0
         children:
         - rid: 3539284211612254222
-        - rid: 3539284211612254229
-    - rid: 3539284211612254228
-      type: {class: AttackTask, ns: , asm: Assembly-CSharp}
-      data:
-        state: 0
-        started: 0
-        guid: 6ab86db27cc25432eb319d6580925c33
-        position: {x: -346, y: -49.99994}
-        blackboard:
-          moveToPosition: {x: 0, y: 0, z: 0}
-          target: {fileID: 0}
-        description: Strong attack
-        drawGizmos: 0
-        triggerName: Strong
-    - rid: 3539284211612254229
-      type: {class: RandomStripSelector, ns: , asm: Assembly-CSharp}
-      data:
-        state: 0
-        started: 0
-        guid: 52f0bf10112b0461cbda055a41ea1ecc
-        position: {x: -462.5, y: -195.99994}
-        blackboard:
-          moveToPosition: {x: 0, y: 0, z: 0}
-          target: {fileID: 0}
-        description: 
-        drawGizmos: 0
-        children:
-        - rid: 3539284211612254223
-        - rid: 3539284211612254228
-        probabilityMasses:
-        - 90
-        - 10
+        - rid: 3539284359028932609
     - rid: 3539284211612254231
       type: {class: Repeat, ns: TheKiwiCoder, asm: Assembly-CSharp}
       data:
@@ -390,3 +346,47 @@ MonoBehaviour:
         drawGizmos: 0
         circleRadius: 7
         heightOffset: 0
+    - rid: 3539284359028932609
+      type: {class: RandomStripSelector, ns: Diwide.Ziggurat.BehaviourTree.Composites, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: a360fa778af0f4715a1fbb1f8eb461c1
+        position: {x: -444.2431, y: -196}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          target: {fileID: 0}
+        description: 
+        drawGizmos: 0
+        children:
+        - rid: 3539284359028932610
+        - rid: 3539284359028932611
+        probabilityMasses:
+        - 90
+        - 10
+    - rid: 3539284359028932610
+      type: {class: AttackTask, ns: Diwide.Ziggurat.BehaviourTree.Actions, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 30b81ba80c138407e87b64ef44f89d33
+        position: {x: -531.69794, y: -8.745056}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          target: {fileID: 0}
+        description: Fast attack
+        drawGizmos: 0
+        triggerName: Fast
+    - rid: 3539284359028932611
+      type: {class: AttackTask, ns: Diwide.Ziggurat.BehaviourTree.Actions, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 66d90ae3d52ef49ceb3e4ef148c442b4
+        position: {x: -346.4762, y: -8.5}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          target: {fileID: 0}
+        description: Strong attack
+        drawGizmos: 0
+        triggerName: Strong

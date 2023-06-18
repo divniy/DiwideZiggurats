@@ -1,45 +1,43 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using NaughtyAttributes;
-using UnityEngine;
 using TheKiwiCoder;
 
-[System.Serializable]
-public class AttackTask : ActionNode
+namespace Diwide.Ziggurat.BehaviourTree.Actions
 {
-    [Dropdown("AttackTriggers")]
-    public string triggerName;
-
-    private List<string> AttackTriggers
+    [Serializable]
+    public class AttackTask : ActionNode
     {
-        get { return new List<string>() { "Fast", "Strong" }; }
-    }
+        [Dropdown("AttackTriggers")]
+        public string triggerName;
 
-    private bool _isAnimating;
-    protected override void OnStart() {
-        _isAnimating = true;
-        context.animator.SetTrigger(triggerName);
-        context.environment.OnEndAnimation += UnitEnvironmentOnEndAnimation;
-    }
+        private List<string> AttackTriggers => new() { "Fast", "Strong" };
 
-    private void UnitEnvironmentOnEndAnimation(object sender, EventArgs e)
-    {
-        _isAnimating = false;
-    }
+        private bool _isAnimating;
+        protected override void OnStart() {
+            _isAnimating = true;
+            context.animator.SetTrigger(triggerName);
+            context.environment.OnEndAnimation += UnitEnvironmentOnEndAnimation;
+        }
 
-    protected override void OnStop() {
-        context.environment.OnEndAnimation -= UnitEnvironmentOnEndAnimation;
-    }
+        private void UnitEnvironmentOnEndAnimation(object sender, EventArgs e)
+        {
+            _isAnimating = false;
+        }
 
-    protected override State OnUpdate()
-    {
-        if (blackboard.target == null)
-            return State.Failure;
+        protected override void OnStop() {
+            context.environment.OnEndAnimation -= UnitEnvironmentOnEndAnimation;
+        }
+
+        protected override State OnUpdate()
+        {
+            if (blackboard.target == null)
+                return State.Failure;
         
-        if (_isAnimating) 
-            return State.Running;
+            if (_isAnimating) 
+                return State.Running;
         
-        return State.Success;
+            return State.Success;
+        }
     }
 }
