@@ -21,7 +21,6 @@ MonoBehaviour:
   - rid: 3539284211612254211
   - rid: 3539284211612254212
   - rid: 3539284211612254215
-  - rid: 3539284211612254218
   - rid: 3539284211612254219
   - rid: 3539284211612254220
   - rid: 3539284211612254222
@@ -38,12 +37,13 @@ MonoBehaviour:
   - rid: 3539284359028932610
   - rid: 3539284359028932611
   - rid: 3539284359028932612
+  - rid: 3539284359028932613
   treeState: 0
   blackboard:
     moveToPosition: {x: 0, y: 0, z: 0}
     target: {fileID: 0}
-  viewPosition: {x: 638, y: 437.5, z: 0}
-  viewScale: {x: 0.25, y: 0.25, z: 1}
+  viewPosition: {x: 384.5, y: 503.5, z: 0}
+  viewScale: {x: 0.57175326, y: 0.57175326, z: 1}
   references:
     version: 2
     RefIds:
@@ -53,7 +53,7 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: 1a76ebaf-d8ca-427f-8414-5130366ffeaf
-        position: {x: 312.5, y: -986}
+        position: {x: 312.49963, y: -887.9998}
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
@@ -84,7 +84,7 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: 02a915028e51b476488a6018d82f1f05
-        position: {x: 131.49994, y: -569.5}
+        position: {x: 105.49988, y: -569.4999}
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
@@ -93,14 +93,14 @@ MonoBehaviour:
         children:
         - rid: 3539284211612254211
         - rid: 3539284211612254219
-        - rid: 3539284211612254218
+        - rid: 3539284359028932613
     - rid: 3539284211612254211
       type: {class: CheckEnemyInFOVRange, ns: Diwide.Ziggurat.BehaviourTree.Actions, asm: Assembly-CSharp}
       data:
         state: 0
         started: 0
         guid: 51778cb802d644b47ab8a8d52e276c0b
-        position: {x: -53.5, y: -441}
+        position: {x: -102.47217, y: -444.50003}
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
@@ -113,7 +113,7 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: e4d2d2a8ef10f4d3c90f1d39822d2d15
-        position: {x: 284.5001, y: -329.82245}
+        position: {x: 284.5, y: -330.00003}
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
@@ -140,27 +140,13 @@ MonoBehaviour:
         - rid: 3539284211612254220
         - rid: 3539284211612254210
         - rid: 3539284211612254232
-    - rid: 3539284211612254218
-      type: {class: SetTargetPositionDecorator, ns: , asm: Assembly-CSharp}
-      data:
-        state: 0
-        started: 0
-        guid: f50f8c894f483454a8f4f57d783ace45
-        position: {x: 281.49997, y: -441}
-        blackboard:
-          moveToPosition: {x: 0, y: 0, z: 0}
-          target: {fileID: 0}
-        description: 
-        drawGizmos: 0
-        child:
-          rid: 3539284211612254212
     - rid: 3539284211612254219
       type: {class: Log, ns: TheKiwiCoder, asm: Assembly-CSharp}
       data:
         state: 0
         started: 0
         guid: ce608cd8bf37c44c1a2ed794545e061c
-        position: {x: 56.499878, y: -330}
+        position: {x: 105.47217, y: -441}
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
@@ -232,7 +218,7 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: 94b5d689c2e0e40e2b8f060d6ad814b7
-        position: {x: 312.5, y: -862}
+        position: {x: 312.49963, y: -803.9998}
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
@@ -390,3 +376,17 @@ MonoBehaviour:
         description: 
         drawGizmos: 0
         attackRange: 1.5
+    - rid: 3539284359028932613
+      type: {class: SetTargetPositionDecorator, ns: Diwide.Ziggurat.BehaviourTree.Decorators, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 08bad23bd4f6d422f91b5f6f424d263c
+        position: {x: 284.50012, y: -444.49997}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          target: {fileID: 0}
+        description: 
+        drawGizmos: 0
+        child:
+          rid: 3539284211612254212

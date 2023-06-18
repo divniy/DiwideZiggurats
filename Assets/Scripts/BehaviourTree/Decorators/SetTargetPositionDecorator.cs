@@ -1,26 +1,30 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using TheKiwiCoder;
+using UnityEngine;
 
-[System.Serializable]
-public class SetTargetPositionDecorator : DecoratorNode
+namespace Diwide.Ziggurat.BehaviourTree.Decorators
 {
-    protected override void OnStart()
+    [System.Serializable]
+    public class SetTargetPositionDecorator : DecoratorNode
     {
-    }
+        private static readonly int Movement = Animator.StringToHash("Movement");
 
-    protected override void OnStop() {
-        context.animator.SetFloat("Movement", 0f);
-    }
+        protected override void OnStart()
+        {
+        }
 
-    protected override State OnUpdate()
-    {
-        if (blackboard.target == null) return State.Failure;
-        Vector3 prevPosition = blackboard.moveToPosition;
-        blackboard.moveToPosition = blackboard.target.position;
-        var state = child.Update();
-        blackboard.moveToPosition = prevPosition;
-        return state;
+        protected override void OnStop() {
+            context.animator.SetFloat(Movement, 0f);
+        }
+
+        protected override State OnUpdate()
+        {
+            if (blackboard.target == null) return State.Failure;
+            
+            var prevPosition = blackboard.moveToPosition;
+            blackboard.moveToPosition = blackboard.target.position;
+            var childState = child.Update();
+            blackboard.moveToPosition = prevPosition;
+            return childState;
+        }
     }
 }
