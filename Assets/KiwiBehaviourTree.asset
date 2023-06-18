@@ -24,7 +24,6 @@ MonoBehaviour:
   - rid: 3539284211612254218
   - rid: 3539284211612254219
   - rid: 3539284211612254220
-  - rid: 3539284211612254221
   - rid: 3539284211612254222
   - rid: 3539284211612254225
   - rid: 3539284211612254226
@@ -38,11 +37,12 @@ MonoBehaviour:
   - rid: 3539284359028932609
   - rid: 3539284359028932610
   - rid: 3539284359028932611
+  - rid: 3539284359028932612
   treeState: 0
   blackboard:
     moveToPosition: {x: 0, y: 0, z: 0}
     target: {fileID: 0}
-  viewPosition: {x: 326, y: 209.5, z: 0}
+  viewPosition: {x: 638, y: 437.5, z: 0}
   viewScale: {x: 0.25, y: 0.25, z: 1}
   references:
     version: 2
@@ -180,21 +180,8 @@ MonoBehaviour:
         description: 
         drawGizmos: 0
         children:
-        - rid: 3539284211612254221
+        - rid: 3539284359028932612
         - rid: 3539284211612254225
-    - rid: 3539284211612254221
-      type: {class: CheckEnemyInAttackRange, ns: , asm: Assembly-CSharp}
-      data:
-        state: 0
-        started: 0
-        guid: 68275d00660304068998b3fbc175866a
-        position: {x: -988.6243, y: -444.50006}
-        blackboard:
-          moveToPosition: {x: 0, y: 0, z: 0}
-          target: {fileID: 0}
-        description: 
-        drawGizmos: 0
-        attackRange: 1.6
     - rid: 3539284211612254222
       type: {class: Log, ns: TheKiwiCoder, asm: Assembly-CSharp}
       data:
@@ -390,3 +377,16 @@ MonoBehaviour:
         description: Strong attack
         drawGizmos: 0
         triggerName: Strong
+    - rid: 3539284359028932612
+      type: {class: CheckEnemyInAttackRange, ns: Diwide.Ziggurat.BehaviourTree.Actions, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: a29d853c103ab45c8b4e16f16713ecca
+        position: {x: -963, y: -444.5}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          target: {fileID: 0}
+        description: 
+        drawGizmos: 0
+        attackRange: 1.5
