@@ -31,7 +31,7 @@ namespace Diwide.Ziggurat.BehaviourTree.Actions
 
         protected override State OnUpdate()
         {
-            if (blackboard.target == null)
+            if (blackboard.target == null || !blackboard.target.gameObject.activeInHierarchy)
                 return State.Failure;
         
             if (_isAnimating) 

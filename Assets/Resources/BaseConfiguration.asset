@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d4f13b1fe94f3a4f9217b43f2817697, type: 3}
   m_Name: BaseConfiguration
   m_EditorClassIdentifier: 
-  _keys:
+  animationKeyDictionary:
     reorderableList:
       canAdd: 1
       canRemove: 1
       draggable: 1
       expandable: 1
       multipleSelection: 1
-      isExpanded: 1
+      isExpanded: 0
       label:
         m_Text: Keys
         m_Image: {fileID: 0}
@@ -34,11 +34,38 @@ MonoBehaviour:
       elementNameOverride: 
       elementIcon: {fileID: 0}
     reqReferences: {fileID: 0}
-    isExpanded: 1
-    _keyValues: 00010203
-    _keys: 00010203
+    isExpanded: 0
+    _keyValues: 000102
+    _keys: 000102
     _values:
     - Movement
     - Fast
     - Strong
-    - Die
+  unitTeamLayerDictionary:
+    reorderableList:
+      canAdd: 1
+      canRemove: 1
+      draggable: 1
+      expandable: 1
+      multipleSelection: 1
+      isExpanded: 0
+      label:
+        m_Text: Keys
+        m_Image: {fileID: 0}
+        m_Tooltip: 
+      headerHeight: 18
+      footerHeight: 13
+      slideEasing: 0.15
+      verticalSpacing: 2
+      showDefaultBackground: 1
+      elementDisplayType: 0
+      elementNameProperty: 
+      elementNameOverride: 
+      elementIcon: {fileID: 0}
+    reqReferences: {fileID: 0}
+    isExpanded: 0
+    _keyValues: 060708
+    _keys: 060708
+    _values: 060000000700000008000000
+  unitBehaviourTreeSettings:
+    acceleration: 0

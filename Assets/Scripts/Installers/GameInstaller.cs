@@ -7,6 +7,7 @@ namespace Diwide.Ziggurat.Installers
         public override void InstallBindings()
         {
             Container.Bind<CameraController>().FromComponentInHierarchy().AsSingle();
+            Container.Bind<UnitSpawnPoint>().FromComponentInHierarchy().AsTransient();
         }
     }
 }

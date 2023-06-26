@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Zenject;
 
 namespace Diwide.Ziggurat
 {
@@ -12,7 +13,6 @@ namespace Diwide.Ziggurat
 		private Animator _animator;
 		[SerializeField]
 		private Collider _collider;
-
 
 		/// <summary>
 		/// Событие, вызываемое по окончанию анимации
@@ -48,8 +48,8 @@ namespace Diwide.Ziggurat
 		private void AnimationEventEnd_UnityEditor(string result)
 		{
 			//В конце анимации смерти особый аргумент и своя логика обработки
-			if (result == "die") Destroy(gameObject);
-			OnEndAnimation.Invoke(null, null);
+			if (result == "die") GetComponent<UnitFacade>().Dispose();
+			OnEndAnimation?.Invoke(null, null);
 		}
 	}
 }

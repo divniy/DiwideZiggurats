@@ -38,11 +38,13 @@ MonoBehaviour:
   - rid: 3539284359028932611
   - rid: 3539284359028932612
   - rid: 3539284359028932613
+  - rid: 3539284542914297856
+  - rid: 3539284542914297857
   treeState: 0
   blackboard:
     moveToPosition: {x: 0, y: 0, z: 0}
     target: {fileID: 0}
-  viewPosition: {x: 384.5, y: 503.5, z: 0}
+  viewPosition: {x: 461.5, y: 351.5, z: 0}
   viewScale: {x: 0.57175326, y: 0.57175326, z: 1}
   references:
     version: 2
@@ -92,6 +94,7 @@ MonoBehaviour:
         drawGizmos: 0
         children:
         - rid: 3539284211612254211
+        - rid: 3539284542914297857
         - rid: 3539284211612254219
         - rid: 3539284359028932613
     - rid: 3539284211612254211
@@ -100,7 +103,7 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: 51778cb802d644b47ab8a8d52e276c0b
-        position: {x: -102.47217, y: -444.50003}
+        position: {x: -287.99988, y: -444.5}
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
@@ -174,7 +177,7 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: 2c23cfb35e4cc40cb8fca595657e54b4
-        position: {x: -788.4999, y: -195.91324}
+        position: {x: -612.5, y: -196}
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
@@ -210,6 +213,7 @@ MonoBehaviour:
         description: 
         drawGizmos: 0
         children:
+        - rid: 3539284542914297856
         - rid: 3539284211612254222
         - rid: 3539284359028932609
     - rid: 3539284211612254231
@@ -343,7 +347,7 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: 30b81ba80c138407e87b64ef44f89d33
-        position: {x: -531.69794, y: -8.745056}
+        position: {x: -537.5, y: -8.5}
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
@@ -390,3 +394,27 @@ MonoBehaviour:
         drawGizmos: 0
         child:
           rid: 3539284211612254212
+    - rid: 3539284542914297856
+      type: {class: CheckEnemyIsAlive, ns: Diwide.Ziggurat.BehaviourTree.Actions, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 8cf38d26211134e6492ad3c7983718aa
+        position: {x: -793.4348, y: -196}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          target: {fileID: 0}
+        description: 
+        drawGizmos: 0
+    - rid: 3539284542914297857
+      type: {class: CheckEnemyIsAlive, ns: Diwide.Ziggurat.BehaviourTree.Actions, asm: Assembly-CSharp}
+      data:
+        state: 0
+        started: 0
+        guid: 07fb7cbc1505749d88b0ff38fdd125b3
+        position: {x: -70.506714, y: -441}
+        blackboard:
+          moveToPosition: {x: 0, y: 0, z: 0}
+          target: {fileID: 0}
+        description: 
+        drawGizmos: 0

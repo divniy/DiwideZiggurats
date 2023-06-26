@@ -7,14 +7,19 @@ namespace Diwide.Ziggurat
 	[CreateAssetMenu(fileName = "New Configuration", menuName = "Configuration")]
 	public class Configuration : ScriptableObjectInstaller<Configuration>
 	{
-		[SerializeField]
-		private AnimationKeyDictionary _keys;
-
-		public IReadOnlyDictionary<AnimationType, string> GetDictionary => _keys.Clone();
+		
+		public AnimationKeyDictionary animationKeyDictionary;
+		public UnitTeamLayerDictionary unitTeamLayerDictionary;
+		public UnitBehaviourTreeRunner.Settings unitBehaviourTreeSettings;
+		
+		private IReadOnlyDictionary<AnimationType, string> AnimationKeysDictionary => animationKeyDictionary.Clone();
+		private IReadOnlyDictionary<UnitTeam, int> UnitTeamLayers => unitTeamLayerDictionary.Clone();
 		
 		public override void InstallBindings()
 		{
-			Container.BindInstance(GetDictionary);
+			Container.BindInstance(AnimationKeysDictionary);
+			Container.BindInstance(UnitTeamLayers);
+			Container.BindInstance(unitBehaviourTreeSettings);
 		}
 	}
 }

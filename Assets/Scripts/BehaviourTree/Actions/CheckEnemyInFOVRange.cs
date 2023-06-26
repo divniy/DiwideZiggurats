@@ -27,7 +27,7 @@ namespace Diwide.Ziggurat.BehaviourTree.Actions
             }
 
             Collider[] colliders = Physics.OverlapSphere(context.transform.position, range, _enemyLayerMask);
-            if (colliders.Length > 0)
+            if (colliders.Length > 0 && colliders[0].gameObject.activeInHierarchy)
             {
                 blackboard.target = colliders[0].transform;
                 // blackboard.moveToPosition = blackboard.target.position;

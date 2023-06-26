@@ -1,4 +1,5 @@
-﻿using RotaryHeart.Lib.SerializableDictionary;
+﻿using System;
+using RotaryHeart.Lib.SerializableDictionary;
 
 using System.Collections;
 using System.Collections.Generic;
@@ -23,6 +24,27 @@ namespace Diwide.Ziggurat
 		Z = 4
 	}
 
-	[System.Serializable]
+	public enum UnitTeam : byte
+	{
+		Red = 6,
+		Green = 7,
+		Blue = 8
+	}
+
+	[Serializable]
+	public class UnitTeamLayerDictionary : SerializableDictionaryBase<UnitTeam, int> {};
+	
+
+	// public struct UnitLayer
+	// {
+	// 	private UnitTeamLayer _layer;
+	// 	
+	// 	public UnitTeam(UnitTeamLayer layer)
+	// 	{
+	// 		_layer = layer;
+	// 	}
+	// }
+
+	[Serializable]
 	public class AnimationKeyDictionary : SerializableDictionaryBase<AnimationType, string> { }
 }

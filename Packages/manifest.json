@@ -5,7 +5,7 @@
     "com.svermeulen.extenject": "https://github.com/divniy/Extenject.git?path=UnityProject/Assets/Plugins/Zenject#9.3.2",
     "com.unity.collab-proxy": "2.0.4",
     "com.unity.feature.development": "1.0.1",
-    "com.unity.ide.rider": "3.0.22",
+    "com.unity.ide.rider": "3.0.24",
     "com.unity.ide.visualstudio": "2.0.18",
     "com.unity.ide.vscode": "1.2.5",
     "com.unity.inputsystem": "1.5.1",
@@ -43,9 +43,7 @@
     "com.unity.modules.video": "1.0.0",
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
-    "com.unity.modules.xr": "1.0.0",
-    "com.zor.simple-blackboard": "1.5.0",
-    "com.zor.behavior-tree": "1.0.0"
+    "com.unity.modules.xr": "1.0.0"
   },
   "scopedRegistries": [
     {
@@ -54,9 +52,7 @@
       "scopes": [
         "com.dbrizov.naughtyattributes",
         "com.openupm",
-        "com.rotaryheart.serializabledictionarylite",
-        "com.zor.behavior-tree",
-        "com.zor.simple-blackboard"
+        "com.rotaryheart.serializabledictionarylite"
       ]
     }
   ]

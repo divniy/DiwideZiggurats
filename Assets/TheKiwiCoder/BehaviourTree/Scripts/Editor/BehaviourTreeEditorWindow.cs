@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Diwide.Ziggurat;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -138,7 +139,7 @@ namespace TheKiwiCoder {
 
         private void OnSelectionChange() {
             if (Selection.activeGameObject) {
-                BehaviourTreeRunner runner = Selection.activeGameObject.GetComponent<BehaviourTreeRunner>();
+                UnitBehaviourTreeRunner runner = Selection.activeGameObject.GetComponent<UnitBehaviourTreeRunner>();
                 if (runner) {
                     SelectTree(runner.tree);
                 }
