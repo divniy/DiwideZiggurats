@@ -22,8 +22,6 @@ MonoBehaviour:
   - rid: 3539284211612254212
   - rid: 3539284211612254215
   - rid: 3539284211612254219
-  - rid: 3539284211612254220
-  - rid: 3539284211612254222
   - rid: 3539284211612254225
   - rid: 3539284211612254226
   - rid: 3539284211612254231
@@ -38,14 +36,13 @@ MonoBehaviour:
   - rid: 3539284359028932611
   - rid: 3539284359028932612
   - rid: 3539284359028932613
-  - rid: 3539284542914297856
   - rid: 3539284542914297857
   treeState: 0
   blackboard:
     moveToPosition: {x: 0, y: 0, z: 0}
     settings: {fileID: 0}
-  viewPosition: {x: 580.5, y: 253.5, z: 0}
-  viewScale: {x: 0.4971768, y: 0.4971768, z: 1}
+  viewPosition: {x: 598, y: 157, z: 0}
+  viewScale: {x: 0.25, y: 0.25, z: 1}
   references:
     version: 2
     RefIds:
@@ -140,7 +137,7 @@ MonoBehaviour:
         description: 
         drawGizmos: 0
         children:
-        - rid: 3539284211612254220
+        - rid: 3539284211612254225
         - rid: 3539284211612254210
         - rid: 3539284211612254232
     - rid: 3539284211612254219
@@ -156,41 +153,13 @@ MonoBehaviour:
         description: Enemy found!
         drawGizmos: 0
         message: Enemy in field of view
-    - rid: 3539284211612254220
-      type: {class: Sequencer, ns: TheKiwiCoder, asm: Assembly-CSharp}
-      data:
-        state: 0
-        started: 0
-        guid: 7c25e709d593e4a0f911b220915ad6a9
-        position: {x: -762.6243, y: -569.5}
-        blackboard:
-          moveToPosition: {x: 0, y: 0, z: 0}
-          settings: {fileID: 0}
-        description: 
-        drawGizmos: 0
-        children:
-        - rid: 3539284359028932612
-        - rid: 3539284211612254225
-    - rid: 3539284211612254222
-      type: {class: Log, ns: TheKiwiCoder, asm: Assembly-CSharp}
-      data:
-        state: 0
-        started: 0
-        guid: 2c23cfb35e4cc40cb8fca595657e54b4
-        position: {x: -612.5, y: -196}
-        blackboard:
-          moveToPosition: {x: 0, y: 0, z: 0}
-          settings: {fileID: 0}
-        description: 
-        drawGizmos: 0
-        message: Attack Target
     - rid: 3539284211612254225
       type: {class: Repeat, ns: TheKiwiCoder, asm: Assembly-CSharp}
       data:
         state: 0
         started: 0
         guid: f2dd6a5f51a39494ca78669cfe6c6337
-        position: {x: -612.5, y: -444.5}
+        position: {x: -762.5001, y: -569.49994}
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           settings: {fileID: 0}
@@ -206,15 +175,14 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: ab6c01e80cb004c4c955e1f995b0b5ad
-        position: {x: -612.5, y: -331.5}
+        position: {x: -762.5, y: -458.94}
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           settings: {fileID: 0}
         description: 
         drawGizmos: 0
         children:
-        - rid: 3539284542914297856
-        - rid: 3539284211612254222
+        - rid: 3539284359028932612
         - rid: 3539284359028932609
     - rid: 3539284211612254231
       type: {class: Repeat, ns: TheKiwiCoder, asm: Assembly-CSharp}
@@ -329,7 +297,7 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: a360fa778af0f4715a1fbb1f8eb461c1
-        position: {x: -444.2431, y: -196}
+        position: {x: -690.5, y: -330}
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           settings: {fileID: 0}
@@ -347,7 +315,7 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: 30b81ba80c138407e87b64ef44f89d33
-        position: {x: -537.5, y: -8.5}
+        position: {x: -783.5, y: -203}
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           settings: {fileID: 0}
@@ -360,7 +328,7 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: 66d90ae3d52ef49ceb3e4ef148c442b4
-        position: {x: -346.4762, y: -8.5}
+        position: {x: -596, y: -203}
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           settings: {fileID: 0}
@@ -373,7 +341,7 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: a29d853c103ab45c8b4e16f16713ecca
-        position: {x: -963, y: -444.5}
+        position: {x: -963, y: -330}
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           settings: {fileID: 0}
@@ -394,18 +362,6 @@ MonoBehaviour:
         drawGizmos: 0
         child:
           rid: 3539284211612254212
-    - rid: 3539284542914297856
-      type: {class: CheckEnemyIsAlive, ns: Diwide.Ziggurat.BehaviourTree.Actions, asm: Assembly-CSharp}
-      data:
-        state: 0
-        started: 0
-        guid: 8cf38d26211134e6492ad3c7983718aa
-        position: {x: -793.4348, y: -196}
-        blackboard:
-          moveToPosition: {x: 0, y: 0, z: 0}
-          settings: {fileID: 0}
-        description: 
-        drawGizmos: 0
     - rid: 3539284542914297857
       type: {class: CheckEnemyIsAlive, ns: Diwide.Ziggurat.BehaviourTree.Actions, asm: Assembly-CSharp}
       data:

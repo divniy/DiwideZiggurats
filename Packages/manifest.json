@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "com.dbrizov.naughtyattributes": "2.1.4",
+    "com.pimeko.ai-name-generator": "https://github.com/Pimeko/AI-Name-Generator---Unity.git?path=Assets/",
     "com.rotaryheart.serializabledictionarylite": "2.6.11",
     "com.svermeulen.extenject": "https://github.com/divniy/Extenject.git?path=UnityProject/Assets/Plugins/Zenject#9.3.2",
     "com.unity.collab-proxy": "2.0.4",

@@ -9,15 +9,21 @@ namespace TheKiwiCoder {
     [System.Serializable]
     public class Blackboard {
 
+        private GameObject _target;
         public Vector3 moveToPosition;
 
-        public Transform Target
+        public GameObject Target
         {
             get => (_target && _target.gameObject.activeInHierarchy) ? _target : null;
             set => _target = value;
         }
 
         public UnitSettings settings;
-        private Transform _target;
+        
+
+        public bool HasTarget()
+        {
+            return _target && _target.activeInHierarchy;
+        }
     }
 }

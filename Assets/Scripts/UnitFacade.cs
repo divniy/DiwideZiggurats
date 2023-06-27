@@ -25,6 +25,7 @@ namespace Diwide.Ziggurat
         {
             _pool = pool;
             gameObject.layer = _unitTeamLayerDictionary[_settings.unitTeam];
+            gameObject.name = AINamesGenerator.Utils.GetRandomName();
             _poolableManager.TriggerOnSpawned(_settings);
         }
 

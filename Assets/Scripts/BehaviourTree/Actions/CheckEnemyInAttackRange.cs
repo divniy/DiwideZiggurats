@@ -6,8 +6,10 @@ namespace Diwide.Ziggurat.BehaviourTree.Actions
     [Serializable]
     public class CheckEnemyInAttackRange : ActionNode
     {
-        public float attackRange = 1f;
-        protected override void OnStart() {
+        public float attackRange;
+        protected override void OnStart()
+        {
+            attackRange = blackboard.settings.attackRange;
         }
 
         protected override void OnStop() {
@@ -15,8 +17,13 @@ namespace Diwide.Ziggurat.BehaviourTree.Actions
 
         protected override State OnUpdate()
         {
-            if (blackboard.Target == null) return State.Failure;
-            var sqrDistanceToTarget = (context.transform.position - blackboard.Target.position).sqrMagnitude;
+            if (!blackboard.HasTarget())
+                return State.Failure;
+            
+            var ownerPosition = context.transform.position;
+            var targetPosition = blackboard.Target.transform.position;
+
+            var sqrDistanceToTarget = (ownerPosition - targetPosition).sqrMagnitude;
             return sqrDistanceToTarget <= attackRange * attackRange 
                 ? State.Success : State.Failure;
         }

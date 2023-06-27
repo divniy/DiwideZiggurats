@@ -20,7 +20,6 @@ namespace Diwide.Ziggurat.BehaviourTree.Actions
 
         private bool _isAnimating;
         protected override void OnStart() {
-            context.transform.LookAt(blackboard.Target);
             _isAnimating = true;
             _attackDamage = blackboard.settings.attackDamageDictionary[attackType];
             var triggerName = Enum.GetName(typeof(AttackType), attackType);
@@ -46,9 +45,11 @@ namespace Diwide.Ziggurat.BehaviourTree.Actions
 
         protected override State OnUpdate()
         {
-            if (blackboard.Target == null || !blackboard.Target.gameObject.activeInHierarchy)
+            if (!blackboard.HasTarget())
                 return State.Failure;
         
+            context.transform.LookAt(blackboard.Target.transform);
+            
             if (_isAnimating) 
                 return State.Running;
         

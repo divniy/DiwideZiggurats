@@ -21,7 +21,7 @@ namespace Diwide.Ziggurat.BehaviourTree.Decorators
             if (blackboard.Target == null) return State.Failure;
             
             var prevPosition = blackboard.moveToPosition;
-            blackboard.moveToPosition = blackboard.Target.position;
+            blackboard.moveToPosition = blackboard.Target.transform.position;
             var childState = child.Update();
             blackboard.moveToPosition = prevPosition;
             return childState;

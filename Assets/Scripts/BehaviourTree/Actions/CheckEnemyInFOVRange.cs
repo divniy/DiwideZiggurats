@@ -1,3 +1,4 @@
+using System.Linq;
 using TheKiwiCoder;
 using UnityEngine;
 
@@ -20,16 +21,24 @@ namespace Diwide.Ziggurat.BehaviourTree.Actions
 
         protected override State OnUpdate()
         {
-            if (blackboard.Target != null)
+            if (blackboard.HasTarget())
             {
                 // blackboard.moveToPosition = blackboard.target.position;
                 return State.Success;
             }
 
-            Collider[] colliders = Physics.OverlapSphere(context.transform.position, range, _enemyLayerMask);
+            Collider[] colliders = Physics.OverlapSphere(context.transform.position, range, _enemyLayerMask, QueryTriggerInteraction.Ignore);
             if (colliders.Length > 0 && colliders[0].gameObject.activeInHierarchy)
             {
-                blackboard.Target = colliders[0].transform;
+                var closestCollider = colliders
+                    // .Where(_ => _.gameObject.activeInHierarchy)
+                    .Select(collider => new
+                        {collider, distance = Vector3.Distance(context.transform.position, collider.transform.position)}
+                    )
+                    .OrderBy(_ => _.distance)
+                    .First().collider;
+                    
+                blackboard.Target = closestCollider.gameObject;
                 // blackboard.moveToPosition = blackboard.target.position;
                 return State.Success;
             }
