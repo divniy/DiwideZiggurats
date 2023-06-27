@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Diwide.Ziggurat;
 using UnityEngine;
 
 namespace TheKiwiCoder {
@@ -12,5 +13,6 @@ namespace TheKiwiCoder {
 
         public Vector3 moveToPosition;
         public Transform target;
+        public UnitSettings settings;
     }
 }

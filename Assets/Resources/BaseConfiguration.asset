@@ -68,4 +68,5 @@ MonoBehaviour:
     _keys: 060708
     _values: 060000000700000008000000
   unitBehaviourTreeSettings:
+    speed: 0
     acceleration: 0

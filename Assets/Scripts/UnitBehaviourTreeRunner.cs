@@ -7,7 +7,7 @@ using Context = TheKiwiCoder.Context;
 
 namespace Diwide.Ziggurat
 {
-    public class UnitBehaviourTreeRunner : MonoBehaviour, IPoolable
+    public class UnitBehaviourTreeRunner : MonoBehaviour, IPoolable<UnitSettings>
     {
         private TheKiwiCoder.BehaviourTree _treePrototype;
         [ReadOnly]
@@ -27,9 +27,10 @@ namespace Diwide.Ziggurat
             // tree = null;
         }
 
-        public void OnSpawned()
+        public void OnSpawned(UnitSettings settings)
         {
             tree = _treePrototype.Clone();
+            tree.blackboard.settings = settings;
             _context = CreateBehaviourTreeContext();
             tree.Bind(_context);
         }

@@ -44,8 +44,9 @@ MonoBehaviour:
   blackboard:
     moveToPosition: {x: 0, y: 0, z: 0}
     target: {fileID: 0}
-  viewPosition: {x: 461.5, y: 351.5, z: 0}
-  viewScale: {x: 0.57175326, y: 0.57175326, z: 1}
+    settings: {fileID: 0}
+  viewPosition: {x: 389.5, y: 187.5, z: 0}
+  viewScale: {x: 0.25, y: 0.25, z: 1}
   references:
     version: 2
     RefIds:
@@ -59,6 +60,7 @@ MonoBehaviour:
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
+          settings: {fileID: 0}
         description: 
         drawGizmos: 0
         child:
@@ -73,6 +75,7 @@ MonoBehaviour:
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
+          settings: {fileID: 0}
         description: 
         drawGizmos: 0
         speed: 3
@@ -90,6 +93,7 @@ MonoBehaviour:
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
+          settings: {fileID: 0}
         description: 
         drawGizmos: 0
         children:
@@ -107,9 +111,10 @@ MonoBehaviour:
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
+          settings: {fileID: 0}
         description: 
         drawGizmos: 0
-        range: 20
+        range: 10
     - rid: 3539284211612254212
       type: {class: AnimateMoveToPosition, ns: Diwide.Ziggurat.BehaviourTree.Actions, asm: Assembly-CSharp}
       data:
@@ -120,13 +125,14 @@ MonoBehaviour:
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
+          settings: {fileID: 0}
         description: 
         drawGizmos: 0
-        speed: 4
-        stoppingDistance: 1.3
+        speed: 3
+        stoppingDistance: 1.7
         updateRotation: 1
         acceleration: 40
-        tolerance: 1.5
+        tolerance: 2.5
     - rid: 3539284211612254215
       type: {class: InterruptSelector, ns: TheKiwiCoder, asm: Assembly-CSharp}
       data:
@@ -137,6 +143,7 @@ MonoBehaviour:
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
+          settings: {fileID: 0}
         description: 
         drawGizmos: 0
         children:
@@ -153,6 +160,7 @@ MonoBehaviour:
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
+          settings: {fileID: 0}
         description: Enemy found!
         drawGizmos: 0
         message: Enemy in field of view
@@ -166,6 +174,7 @@ MonoBehaviour:
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
+          settings: {fileID: 0}
         description: 
         drawGizmos: 0
         children:
@@ -181,6 +190,7 @@ MonoBehaviour:
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
+          settings: {fileID: 0}
         description: 
         drawGizmos: 0
         message: Attack Target
@@ -194,6 +204,7 @@ MonoBehaviour:
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
+          settings: {fileID: 0}
         description: 
         drawGizmos: 0
         child:
@@ -206,10 +217,11 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: ab6c01e80cb004c4c955e1f995b0b5ad
-        position: {x: -612.4999, y: -329.99994}
+        position: {x: -612.5, y: -331.5}
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
+          settings: {fileID: 0}
         description: 
         drawGizmos: 0
         children:
@@ -226,6 +238,7 @@ MonoBehaviour:
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
+          settings: {fileID: 0}
         description: 
         drawGizmos: 0
         child:
@@ -242,6 +255,7 @@ MonoBehaviour:
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
+          settings: {fileID: 0}
         description: 
         drawGizmos: 0
         children:
@@ -257,6 +271,7 @@ MonoBehaviour:
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
+          settings: {fileID: 0}
         description: 
         drawGizmos: 0
         child:
@@ -273,6 +288,7 @@ MonoBehaviour:
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
+          settings: {fileID: 0}
         description: 
         drawGizmos: 0
         children:
@@ -289,6 +305,7 @@ MonoBehaviour:
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
+          settings: {fileID: 0}
         description: 
         drawGizmos: 0
         duration: 2
@@ -302,6 +319,7 @@ MonoBehaviour:
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
+          settings: {fileID: 0}
         description: 
         drawGizmos: 0
         speed: 5
@@ -319,6 +337,7 @@ MonoBehaviour:
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
+          settings: {fileID: 0}
         description: 
         drawGizmos: 0
         circleRadius: 7
@@ -333,6 +352,7 @@ MonoBehaviour:
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
+          settings: {fileID: 0}
         description: 
         drawGizmos: 0
         children:
@@ -351,6 +371,7 @@ MonoBehaviour:
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
+          settings: {fileID: 0}
         description: Fast attack
         drawGizmos: 0
         triggerName: Fast
@@ -364,6 +385,7 @@ MonoBehaviour:
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
+          settings: {fileID: 0}
         description: Strong attack
         drawGizmos: 0
         triggerName: Strong
@@ -377,9 +399,10 @@ MonoBehaviour:
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
+          settings: {fileID: 0}
         description: 
         drawGizmos: 0
-        attackRange: 1.5
+        attackRange: 2
     - rid: 3539284359028932613
       type: {class: SetTargetPositionDecorator, ns: Diwide.Ziggurat.BehaviourTree.Decorators, asm: Assembly-CSharp}
       data:
@@ -390,6 +413,7 @@ MonoBehaviour:
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
+          settings: {fileID: 0}
         description: 
         drawGizmos: 0
         child:
@@ -404,6 +428,7 @@ MonoBehaviour:
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
+          settings: {fileID: 0}
         description: 
         drawGizmos: 0
     - rid: 3539284542914297857
@@ -416,5 +441,6 @@ MonoBehaviour:
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           target: {fileID: 0}
+          settings: {fileID: 0}
         description: 
         drawGizmos: 0

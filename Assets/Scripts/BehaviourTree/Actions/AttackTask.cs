@@ -15,6 +15,7 @@ namespace Diwide.Ziggurat.BehaviourTree.Actions
 
         private bool _isAnimating;
         protected override void OnStart() {
+            context.transform.LookAt(blackboard.target);
             _isAnimating = true;
             context.animator.SetTrigger(triggerName);
             context.environment.OnEndAnimation += UnitEnvironmentOnEndAnimation;

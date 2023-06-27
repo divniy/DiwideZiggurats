@@ -7,16 +7,13 @@ namespace Diwide.Ziggurat
 {
     public class UnitSpawnPoint : MonoBehaviour
     {
-        [SerializeField] private UnitTeam unitTeam = UnitTeam.Red;
+        // [SerializeField] private UnitTeam unitTeam = UnitTeam.Red;
         private UnitFacade.Factory _unitFactory;
-        private IReadOnlyDictionary<UnitTeam, int> _unitTeamLayerDictionary;
 
         [Inject]
-        private void Construct(UnitFacade.Factory unitFactory, 
-            IReadOnlyDictionary<UnitTeam, int> unitTeamLayerDictionary)
+        private void Construct(UnitFacade.Factory unitFactory)
         {
             _unitFactory = unitFactory;
-            _unitTeamLayerDictionary = unitTeamLayerDictionary;
         }
         
         [Button]
@@ -24,7 +21,7 @@ namespace Diwide.Ziggurat
         {
             var unitFacade = _unitFactory.Create();
             unitFacade.transform.position = transform.position;
-            unitFacade.gameObject.layer = _unitTeamLayerDictionary[unitTeam];
+            unitFacade.transform.rotation = transform.rotation;
         }
     }
 }
