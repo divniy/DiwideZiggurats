@@ -12,9 +12,12 @@ namespace Diwide.Ziggurat
         [Inject] private UnitEnvironment _unitEnvironment;
         [Inject] private UnitSettings _settings;
         [Inject] private IReadOnlyDictionary<UnitTeam, int> _unitTeamLayerDictionary;
+        [Inject] private Animator _animator;
         [Inject] private UnitHealthHandler _healthHandler;
         public UnitSettings Settings => _settings;
+        public Animator Animator => _animator;
         public UnitHealthHandler HealthHandler => _healthHandler;
+        public event Action<UnitHealthHandler> EnemyHitAction;
         
         private IMemoryPool _pool;
 
@@ -34,8 +37,12 @@ namespace Diwide.Ziggurat
         
         public void Dispose()
         {
-            
             _pool.Despawn(this);
+        }
+
+        public void OnEnemyHitAction(UnitHealthHandler targetHealthHandler)
+        {
+            EnemyHitAction?.Invoke(targetHealthHandler);
         }
         
         public class Factory : PlaceholderFactory<UnitFacade>

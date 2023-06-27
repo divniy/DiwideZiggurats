@@ -15,8 +15,8 @@ namespace Diwide.Ziggurat.BehaviourTree.Actions
 
         protected override State OnUpdate()
         {
-            if (blackboard.target == null) return State.Failure;
-            var sqrDistanceToTarget = (context.transform.position - blackboard.target.position).sqrMagnitude;
+            if (blackboard.Target == null) return State.Failure;
+            var sqrDistanceToTarget = (context.transform.position - blackboard.Target.position).sqrMagnitude;
             return sqrDistanceToTarget <= attackRange * attackRange 
                 ? State.Success : State.Failure;
         }

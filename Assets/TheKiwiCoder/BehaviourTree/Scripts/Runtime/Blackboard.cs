@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using Diwide.Ziggurat;
 using UnityEngine;
 
@@ -12,7 +10,14 @@ namespace TheKiwiCoder {
     public class Blackboard {
 
         public Vector3 moveToPosition;
-        public Transform target;
+
+        public Transform Target
+        {
+            get => (_target && _target.gameObject.activeInHierarchy) ? _target : null;
+            set => _target = value;
+        }
+
         public UnitSettings settings;
+        private Transform _target;
     }
 }

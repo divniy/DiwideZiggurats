@@ -12,6 +12,7 @@ namespace TheKiwiCoder {
     // Feel free to extend this class 
     public class Context {
         public GameObject gameObject;
+        public UnitFacade facade;
         public Transform transform;
         public Animator animator;
         public Rigidbody physics;
@@ -36,6 +37,7 @@ namespace TheKiwiCoder {
             context.capsuleCollider = gameObject.GetComponent<CapsuleCollider>();
             context.characterController = gameObject.GetComponent<CharacterController>();
             context.environment = gameObject.GetComponent<UnitEnvironment>();
+            context.facade = gameObject.GetComponent<UnitFacade>();
             // Add whatever else you need here...
 
             return context;

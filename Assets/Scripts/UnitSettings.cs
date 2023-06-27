@@ -1,3 +1,4 @@
+using NaughtyAttributes;
 using UnityEngine;
 
 namespace Diwide.Ziggurat
@@ -8,6 +9,11 @@ namespace Diwide.Ziggurat
         public UnitTeam unitTeam = UnitTeam.Red;
         public float respawnTime = 10f;
         public float health = 100;
-        public float fastAttackDamage = 10;
+        public AttackDamageDictionary attackDamageDictionary = new()
+            {
+                { AttackType.Fast, 10}, 
+                { AttackType.Strong, 20}
+            };
+        [Tag] public string weaponTag = "Weapon";
     }
 }

@@ -2,37 +2,51 @@ using System;
 using System.Collections.Generic;
 using NaughtyAttributes;
 using TheKiwiCoder;
+using Zenject;
 
 namespace Diwide.Ziggurat.BehaviourTree.Actions
 {
     [Serializable]
     public class AttackTask : ActionNode
     {
-        [Dropdown("AttackTriggers")]
-        public string triggerName;
+        // [Dropdown("AttackTriggers")]
+        // public string triggerName;
 
-        private List<string> AttackTriggers => new() { "Fast", "Strong" };
+        public AttackType attackType;
+
+        private float _attackDamage;
+        
+        // private List<string> AttackTriggers => new() { "Fast", "Strong" };
 
         private bool _isAnimating;
         protected override void OnStart() {
-            context.transform.LookAt(blackboard.target);
+            context.transform.LookAt(blackboard.Target);
             _isAnimating = true;
+            _attackDamage = blackboard.settings.attackDamageDictionary[attackType];
+            var triggerName = Enum.GetName(typeof(AttackType), attackType);
             context.animator.SetTrigger(triggerName);
-            context.environment.OnEndAnimation += UnitEnvironmentOnEndAnimation;
+            context.facade.EnemyHitAction += HitEnemy;
+            context.environment.OnEndAnimation += OnEndAnimation;
         }
 
-        private void UnitEnvironmentOnEndAnimation(object sender, EventArgs e)
+        private void OnEndAnimation(object sender, EventArgs e)
         {
             _isAnimating = false;
         }
 
+        private void HitEnemy(UnitHealthHandler enemyHealthHandler)
+        {
+            enemyHealthHandler.TakeDamage(_attackDamage);
+        }
+
         protected override void OnStop() {
-            context.environment.OnEndAnimation -= UnitEnvironmentOnEndAnimation;
+            context.environment.OnEndAnimation -= OnEndAnimation;
+            context.facade.EnemyHitAction -= HitEnemy;
         }
 
         protected override State OnUpdate()
         {
-            if (blackboard.target == null || !blackboard.target.gameObject.activeInHierarchy)
+            if (blackboard.Target == null || !blackboard.Target.gameObject.activeInHierarchy)
                 return State.Failure;
         
             if (_isAnimating) 

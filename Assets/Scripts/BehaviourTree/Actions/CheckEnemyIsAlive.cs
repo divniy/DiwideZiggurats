@@ -14,7 +14,7 @@ namespace Diwide.Ziggurat.BehaviourTree.Actions
 
         protected override State OnUpdate()
         {
-            var target = blackboard.target;
+            var target = blackboard.Target;
             if (target != null && target.gameObject.activeInHierarchy)
                 return State.Success;
             return State.Failure;

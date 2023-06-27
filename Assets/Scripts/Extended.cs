@@ -31,6 +31,12 @@ namespace Diwide.Ziggurat
 		Blue = 8
 	}
 
+	public enum AttackType
+	{
+		Fast,
+		Strong
+	}
+
 	[Serializable]
 	public class UnitTeamLayerDictionary : SerializableDictionaryBase<UnitTeam, int> {};
 	
@@ -47,4 +53,10 @@ namespace Diwide.Ziggurat
 
 	[Serializable]
 	public class AnimationKeyDictionary : SerializableDictionaryBase<AnimationType, string> { }
+	
+	[Serializable]
+	public class AttackAnimationDictionary : SerializableDictionaryBase<AttackType, AnimationType> { }
+
+	[Serializable]
+	public class AttackDamageDictionary : SerializableDictionaryBase<AttackType, float> { }
 }
