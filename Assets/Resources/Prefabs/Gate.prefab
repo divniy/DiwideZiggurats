@@ -69,6 +69,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitPrefab: {fileID: 4680841554525297364, guid: a10fb4cd5cdd14736be44c1d39f0f2cd, type: 3}
   unitSettings: {fileID: 11400000, guid: deb2a3a83f4954df591ccb1c21f3bdca, type: 2}
+  spawnPoint: {fileID: 8699197178435424867}
   behaviourTree: {fileID: 11400000, guid: d11f6a53504134dbcba23683f022abbc, type: 2}
 --- !u!1 &8097710632862529024
 GameObject:

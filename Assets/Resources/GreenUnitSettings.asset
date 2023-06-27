@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: GreenUnitSettings
   m_EditorClassIdentifier: 
   unitTeam: 7
+  respawnTime: 20
   health: 100
   fastAttackDamage: 10

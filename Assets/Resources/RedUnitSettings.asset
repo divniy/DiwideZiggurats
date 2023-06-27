@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: RedUnitSettings
   m_EditorClassIdentifier: 
   unitTeam: 6
+  respawnTime: 20
   health: 100
   fastAttackDamage: 10

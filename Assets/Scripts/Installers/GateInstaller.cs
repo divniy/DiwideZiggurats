@@ -8,6 +8,7 @@ namespace Diwide.Ziggurat.Installers
     {
         [SerializeField] private GameObject unitPrefab;
         [SerializeField, Expandable] private UnitSettings unitSettings;
+        [SerializeField] private Transform spawnPoint;
         [SerializeField] private TheKiwiCoder.BehaviourTree behaviourTree;
         
         public override void InstallBindings()
@@ -21,6 +22,8 @@ namespace Diwide.Ziggurat.Installers
                     .ByNewPrefabInstaller<UnitInstaller>(unitPrefab)
                     .UnderTransformGroup("Units")
                 );
+            Container.BindInterfacesAndSelfTo<UnitSpawner>().AsSingle().WithArguments(spawnPoint);
+            // Container.BindInstance(spawnPoint).WhenInjectedInto<UnitSpawner>();
             Container.Bind<UnitSpawnPoint>().FromComponentInChildren().AsSingle();
         }
     }

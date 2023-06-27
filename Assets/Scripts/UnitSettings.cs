@@ -6,6 +6,7 @@ namespace Diwide.Ziggurat
     public class UnitSettings : ScriptableObject
     {
         public UnitTeam unitTeam = UnitTeam.Red;
+        public float respawnTime = 10f;
         public float health = 100;
         public float fastAttackDamage = 10;
     }
