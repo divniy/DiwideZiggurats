@@ -57,7 +57,7 @@ namespace Diwide.Ziggurat
                     ""initialStateCheck"": true
                 },
                 {
-                    ""name"": ""Focus"",
+                    ""name"": ""Select"",
                     ""type"": ""Button"",
                     ""id"": ""c380ef0b-95c4-47f1-aec9-830e8b4a9371"",
                     ""expectedControlType"": ""Button"",
@@ -149,7 +149,7 @@ namespace Diwide.Ziggurat
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Focus"",
+                    ""action"": ""Select"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -273,7 +273,7 @@ namespace Diwide.Ziggurat
             m_Camera_ActivateRotation = m_Camera.FindAction("ActivateRotation", throwIfNotFound: true);
             m_Camera_Scale = m_Camera.FindAction("Scale", throwIfNotFound: true);
             m_Camera_Rotate = m_Camera.FindAction("Rotate", throwIfNotFound: true);
-            m_Camera_Focus = m_Camera.FindAction("Focus", throwIfNotFound: true);
+            m_Camera_Select = m_Camera.FindAction("Select", throwIfNotFound: true);
             m_Camera_Move = m_Camera.FindAction("Move", throwIfNotFound: true);
         }
 
@@ -339,7 +339,7 @@ namespace Diwide.Ziggurat
         private readonly InputAction m_Camera_ActivateRotation;
         private readonly InputAction m_Camera_Scale;
         private readonly InputAction m_Camera_Rotate;
-        private readonly InputAction m_Camera_Focus;
+        private readonly InputAction m_Camera_Select;
         private readonly InputAction m_Camera_Move;
         public struct CameraActions
         {
@@ -348,7 +348,7 @@ namespace Diwide.Ziggurat
             public InputAction @ActivateRotation => m_Wrapper.m_Camera_ActivateRotation;
             public InputAction @Scale => m_Wrapper.m_Camera_Scale;
             public InputAction @Rotate => m_Wrapper.m_Camera_Rotate;
-            public InputAction @Focus => m_Wrapper.m_Camera_Focus;
+            public InputAction @Select => m_Wrapper.m_Camera_Select;
             public InputAction @Move => m_Wrapper.m_Camera_Move;
             public InputActionMap Get() { return m_Wrapper.m_Camera; }
             public void Enable() { Get().Enable(); }
@@ -368,9 +368,9 @@ namespace Diwide.Ziggurat
                 @Rotate.started += instance.OnRotate;
                 @Rotate.performed += instance.OnRotate;
                 @Rotate.canceled += instance.OnRotate;
-                @Focus.started += instance.OnFocus;
-                @Focus.performed += instance.OnFocus;
-                @Focus.canceled += instance.OnFocus;
+                @Select.started += instance.OnSelect;
+                @Select.performed += instance.OnSelect;
+                @Select.canceled += instance.OnSelect;
                 @Move.started += instance.OnMove;
                 @Move.performed += instance.OnMove;
                 @Move.canceled += instance.OnMove;
@@ -387,9 +387,9 @@ namespace Diwide.Ziggurat
                 @Rotate.started -= instance.OnRotate;
                 @Rotate.performed -= instance.OnRotate;
                 @Rotate.canceled -= instance.OnRotate;
-                @Focus.started -= instance.OnFocus;
-                @Focus.performed -= instance.OnFocus;
-                @Focus.canceled -= instance.OnFocus;
+                @Select.started -= instance.OnSelect;
+                @Select.performed -= instance.OnSelect;
+                @Select.canceled -= instance.OnSelect;
                 @Move.started -= instance.OnMove;
                 @Move.performed -= instance.OnMove;
                 @Move.canceled -= instance.OnMove;
@@ -415,7 +415,7 @@ namespace Diwide.Ziggurat
             void OnActivateRotation(InputAction.CallbackContext context);
             void OnScale(InputAction.CallbackContext context);
             void OnRotate(InputAction.CallbackContext context);
-            void OnFocus(InputAction.CallbackContext context);
+            void OnSelect(InputAction.CallbackContext context);
             void OnMove(InputAction.CallbackContext context);
         }
     }

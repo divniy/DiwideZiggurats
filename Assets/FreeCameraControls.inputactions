@@ -33,7 +33,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Focus",
+                    "name": "Select",
                     "type": "Button",
                     "id": "c380ef0b-95c4-47f1-aec9-830e8b4a9371",
                     "expectedControlType": "Button",
@@ -125,7 +125,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Focus",
+                    "action": "Select",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },

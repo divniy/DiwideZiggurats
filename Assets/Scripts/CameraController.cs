@@ -12,9 +12,11 @@ namespace Diwide.Ziggurat
 
         private FreeCameraControls _controls;
         private Camera _camera;
+        [SerializeField, Layer]
         private LayerMask _mask;
 
         private bool _activeRotate = false;
+        private bool _gateSelected;
 
         [SerializeField, Range(0.1f, 100f)]
         private float _moveSpeed = 10f;
@@ -27,12 +29,11 @@ namespace Diwide.Ziggurat
 
         // [Space, SerializeField] private BaseUnit _flagPrefab;
         
-        [SerializeField] private Transform _flagPool;
 
         private void Awake()
         {
             _controls = new FreeCameraControls();
-            // _controls.Camera.Focus.performed += OnClick;
+            _controls.Camera.Select.performed += OnClick;
             _controls.Camera.ActivateRotation.performed += OnActivateRotation;
             _controls.Camera.ActivateRotation.canceled += OnActivateRotation;
             _controls.Camera.Scale.performed += OnScale;
@@ -41,7 +42,7 @@ namespace Diwide.Ziggurat
         private void Start()
         {
             _camera = GetComponent<Camera>();
-            _mask = LayerMask.GetMask("Floor");
+            // _mask = LayerMask.GetMask("Floor");
             // _unit = FindObjectsOfType<NPC>().First(_=>_.name == "Unit");
             // _hunter = FindObjectsOfType<NPC>().First(_=>_.name == "Hunter");
             // if(_hunter!= null) _hunter.Target = _unit;
@@ -83,35 +84,29 @@ namespace Diwide.Ziggurat
             Cursor.lockState = (_activeRotate) ? CursorLockMode.Locked : CursorLockMode.None;
         }
 
-        /*private void OnClick(InputAction.CallbackContext obj)
-        {
-            var point = GetRaycastPoint();
-            if(point == null) return;
-        
-            var position = point.Value;
-            position.y = _flagPrefab.transform.position.y;
-        
-            var newFlag = Instantiate(_flagPrefab, position, new Quaternion(), _flagPool);
-        
-            if (_flags.Count > 0)
-            {
-                Destroy(_flags.Last.Value.gameObject);
-                _flags.RemoveLast();
-            }
-        
-            _flags.AddLast(newFlag);
-            _unit.Target = _flags.Last.Value;
-        }*/
-
-        private Vector3? GetRaycastPoint()
+        private void OnClick(InputAction.CallbackContext obj)
         {
             var ray = _camera.ScreenPointToRay(Mouse.current.position.ReadValue());
-            if (Physics.Raycast(ray, out var hit, _mask))
+            if (Physics.Raycast(ray, out var hit, 1000f, _mask, QueryTriggerInteraction.Collide))
             {
-                return hit.point;
+                SelectGate(hit.collider.gameObject);
             }
+            else
+            {
+                DeselectGate();
+            }
+        }
 
-            return null;
+        private void SelectGate(GameObject gameObject)
+        {
+            Debug.Log($"{gameObject.name} selected");
+            _gateSelected = true;
+        }
+
+        private void DeselectGate()
+        {
+            Debug.Log("Gates deselected");
+            _gateSelected = false;
         }
 
         private void OnEnable()
