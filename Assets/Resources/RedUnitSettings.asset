@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: RedUnitSettings
   m_EditorClassIdentifier: 
   unitTeam: 6
-  respawnTime: 20
-  health: 150
+  respawnTime: 10
+  health: 200
+  attackRange: 2
   attackDamageDictionary:
     reorderableList:
       canAdd: 1

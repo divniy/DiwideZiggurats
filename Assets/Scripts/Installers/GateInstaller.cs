@@ -15,16 +15,19 @@ namespace Diwide.Ziggurat.Installers
         {
             Container.BindInstance(unitSettings);
             Container.BindInstance(behaviourTree);
+            // Container.Bind<GateFacade>().FromNewComponentOnRoot().AsSingle().NonLazy();
+            // Container.Bind<GateSelector>().AsSingle();
+            // Container.Bind<UnitRegistry>().AsSingle();
             Container.BindFactory<UnitFacade, UnitFacade.Factory>()
                 .FromMonoPoolableMemoryPool<UnitFacade>(b => b
                     .WithInitialSize(3)
                     .FromSubContainerResolve()
                     .ByNewPrefabInstaller<UnitInstaller>(unitPrefab)
-                    .UnderTransformGroup("Units")
+                    .UnderTransformGroup("SpawnPoint")
                 );
             Container.BindInterfacesAndSelfTo<UnitSpawner>().AsSingle().WithArguments(spawnPoint);
             // Container.BindInstance(spawnPoint).WhenInjectedInto<UnitSpawner>();
-            // Container.Bind<UnitSpawnPoint>().FromComponentInChildren().AsSingle();
+            Container.Bind<UnitSpawnPoint>().FromComponentInChildren().AsSingle();
         }
     }
 }

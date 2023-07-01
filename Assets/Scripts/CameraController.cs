@@ -97,9 +97,11 @@ namespace Diwide.Ziggurat
             }
         }
 
-        private void SelectGate(GameObject gameObject)
+        private void SelectGate(GameObject gateGameObject)
         {
-            Debug.Log($"{gameObject.name} selected");
+            Debug.Log($"{gateGameObject.name} selected");
+            var gateFacade = gateGameObject.GetComponent<GateFacade>();
+            gateFacade.Select();
             _gateSelected = true;
         }
 

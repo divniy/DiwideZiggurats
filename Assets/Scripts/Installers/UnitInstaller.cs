@@ -18,6 +18,7 @@ namespace Diwide.Ziggurat.Installers
             Container.BindInterfacesAndSelfTo<UnitHealthHandler>().FromNewComponentOnRoot().AsSingle();
             Container.Bind<UnitIncomingHitHandler>().FromNewComponentOnRoot().AsSingle().NonLazy();
             // Container.BindInterfacesAndSelfTo<UnitIncomingHitHandler>().FromNewComponentOnRoot().AsSingle();
+            Container.Bind<UnitSelector>().FromComponentOnRoot().AsSingle();
             Container.Bind<UnitEnvironment>().FromComponentOnRoot().AsSingle();
             Container.Bind<PoolableManager<UnitSettings>>().AsSingle();
         }

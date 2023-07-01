@@ -14,9 +14,12 @@ namespace Diwide.Ziggurat
         [Inject] private IReadOnlyDictionary<UnitTeam, int> _unitTeamLayerDictionary;
         [Inject] private Animator _animator;
         [Inject] private UnitHealthHandler _healthHandler;
+        [Inject] private UnitSelector _unitSelector;
+        [Inject] private UnitRegistry _unitRegistry;
         public UnitSettings Settings => _settings;
         public Animator Animator => _animator;
         public UnitHealthHandler HealthHandler => _healthHandler;
+        public UnitSelector UnitSelector => _unitSelector;
         public event Action<UnitHealthHandler> EnemyHitAction;
         
         private IMemoryPool _pool;
@@ -24,6 +27,7 @@ namespace Diwide.Ziggurat
         public void OnSpawned(IMemoryPool pool)
         {
             _pool = pool;
+            _unitRegistry.Add(this);
             gameObject.layer = _unitTeamLayerDictionary[_settings.unitTeam];
             gameObject.name = Utils.GetRandomName();
             _poolableManager.TriggerOnSpawned(_settings);
@@ -32,6 +36,7 @@ namespace Diwide.Ziggurat
         public void OnDespawned()
         {
             _pool = null;
+            _unitRegistry.Remove(this);
             gameObject.layer = LayerMask.NameToLayer("Default");
             _poolableManager.TriggerOnDespawned();
         }

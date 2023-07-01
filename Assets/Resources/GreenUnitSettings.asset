@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitTeam: 7
   respawnTime: 20
-  health: 200
+  health: 100
   attackRange: 2
   attackDamageDictionary:
     reorderableList:
