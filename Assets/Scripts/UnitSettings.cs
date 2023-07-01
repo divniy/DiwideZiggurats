@@ -10,6 +10,7 @@ namespace Diwide.Ziggurat
         public float respawnTime = 10f;
         public float health = 100;
         public float attackRange = 2f;
+        [Range(0, 100)] public int strongAttackProbability = 30;
         public AttackDamageDictionary attackDamageDictionary = new()
             {
                 { AttackType.Fast, 10}, 

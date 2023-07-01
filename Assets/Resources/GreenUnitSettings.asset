@@ -16,6 +16,7 @@ MonoBehaviour:
   respawnTime: 20
   health: 100
   attackRange: 2
+  strongAttackProbability: 15
   attackDamageDictionary:
     reorderableList:
       canAdd: 1

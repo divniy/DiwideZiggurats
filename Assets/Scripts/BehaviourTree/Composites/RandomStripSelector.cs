@@ -14,6 +14,11 @@ namespace Diwide.Ziggurat.BehaviourTree.Composites
     
         protected override void OnStart()
         {
+            if (blackboard.settings)
+            {
+                var strongAP = blackboard.settings.strongAttackProbability;
+                probabilityMasses = new List<float>() { 100-strongAP, strongAP };
+            }
             ValidateNode();
             current = ChooseChildIndex(probabilityMasses);
         }

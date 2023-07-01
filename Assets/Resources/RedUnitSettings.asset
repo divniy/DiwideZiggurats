@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: RedUnitSettings
   m_EditorClassIdentifier: 
   unitTeam: 6
-  respawnTime: 10
+  respawnTime: 20
   health: 200
   attackRange: 2
+  strongAttackProbability: 50
   attackDamageDictionary:
     reorderableList:
       canAdd: 1
@@ -43,5 +44,5 @@ MonoBehaviour:
     _keys: 0000000001000000
     _values:
     - 10
-    - 30
+    - 50
   weaponTag: Weapon
