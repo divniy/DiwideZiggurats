@@ -4,7 +4,7 @@ namespace Diwide.Ziggurat
 {
     public class UnitRegistry
     {
-        private List<UnitFacade> _units;
+        private List<UnitFacade> _units = new();
         public IReadOnlyList<UnitFacade> Units => _units;
 
         public void Add(UnitFacade unit)

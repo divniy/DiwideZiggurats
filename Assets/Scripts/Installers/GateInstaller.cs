@@ -15,9 +15,9 @@ namespace Diwide.Ziggurat.Installers
         {
             Container.BindInstance(unitSettings);
             Container.BindInstance(behaviourTree);
-            // Container.Bind<GateFacade>().FromNewComponentOnRoot().AsSingle().NonLazy();
-            // Container.Bind<GateSelector>().AsSingle();
-            // Container.Bind<UnitRegistry>().AsSingle();
+            Container.Bind<GateFacade>().FromNewComponentOnRoot().AsSingle().NonLazy();
+            Container.Bind<GateSelector>().AsSingle();
+            Container.Bind<UnitRegistry>().AsSingle();
             Container.BindFactory<UnitFacade, UnitFacade.Factory>()
                 .FromMonoPoolableMemoryPool<UnitFacade>(b => b
                     .WithInitialSize(3)
