@@ -14,12 +14,12 @@ namespace Diwide.Ziggurat
         [Inject] private IReadOnlyDictionary<UnitTeam, int> _unitTeamLayerDictionary;
         [Inject] private Animator _animator;
         [Inject] private UnitHealthHandler _healthHandler;
-        [Inject] private UnitSelector _unitSelector;
+        // [Inject] private UnitSelector _unitSelector;
         [Inject] private UnitRegistry _unitRegistry;
         public UnitSettings Settings => _settings;
         public Animator Animator => _animator;
         public UnitHealthHandler HealthHandler => _healthHandler;
-        public UnitSelector UnitSelector => _unitSelector;
+        // public UnitSelector UnitSelector => _unitSelector;
         public event Action<UnitHealthHandler> EnemyHitAction;
         
         private IMemoryPool _pool;

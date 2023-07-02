@@ -4,10 +4,13 @@ using Zenject;
 
 namespace Diwide.Ziggurat.Installers
 {
-    public class UnitInstaller : Installer<UnitInstaller>
+    public class UnitInstaller : MonoInstaller
     {
+        public UnitSelector.Settings unitSelectorSettings;
+        
         public override void InstallBindings()
         {
+            Container.BindInstance(unitSelectorSettings);
             Container.Bind<UnitFacade>().FromNewComponentOnRoot().AsSingle();
             Container.Bind<Animator>().FromComponentOnRoot();
             // subContainer.BindInstance();
@@ -18,7 +21,7 @@ namespace Diwide.Ziggurat.Installers
             Container.BindInterfacesAndSelfTo<UnitHealthHandler>().FromNewComponentOnRoot().AsSingle();
             Container.Bind<UnitIncomingHitHandler>().FromNewComponentOnRoot().AsSingle().NonLazy();
             // Container.BindInterfacesAndSelfTo<UnitIncomingHitHandler>().FromNewComponentOnRoot().AsSingle();
-            Container.Bind<UnitSelector>().FromComponentOnRoot().AsSingle();
+            Container.BindInterfacesTo<UnitSelector>().AsSingle();
             Container.Bind<UnitEnvironment>().FromComponentOnRoot().AsSingle();
             Container.Bind<PoolableManager<UnitSettings>>().AsSingle();
         }

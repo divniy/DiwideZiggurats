@@ -3,6 +3,7 @@ using System.Linq;
 using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Zenject;
 
 namespace Diwide.Ziggurat
 {
@@ -28,6 +29,8 @@ namespace Diwide.Ziggurat
         private float _upDownSpeed = 10f;
 
         // [Space, SerializeField] private BaseUnit _flagPrefab;
+        [Inject] private SignalBus _signalBus;
+        [Inject] private List<GateFacade> _gateFacades;
         
 
         private void Awake()
@@ -89,11 +92,12 @@ namespace Diwide.Ziggurat
             var ray = _camera.ScreenPointToRay(Mouse.current.position.ReadValue());
             if (Physics.Raycast(ray, out var hit, 1000f, _mask, QueryTriggerInteraction.Collide))
             {
-                SelectGate(hit.collider.gameObject);
+                _signalBus.Fire(new TeamSelectedSignal(){ layer = hit.collider.gameObject.layer });
+                // SelectGate(hit.collider.gameObject);
             }
             else
             {
-                DeselectGate();
+                // DeselectGate();
             }
         }
 
@@ -101,7 +105,7 @@ namespace Diwide.Ziggurat
         {
             Debug.Log($"{gateGameObject.name} selected");
             var gateFacade = gateGameObject.GetComponent<GateFacade>();
-            gateFacade.Select();
+            // gateFacade.Select();
             _gateSelected = true;
         }
 

@@ -231,6 +231,10 @@ PrefabInstance:
       value: Block 5x5x6
       objectReference: {fileID: 0}
     - target: {fileID: 1000011106391606, guid: e07cdc7f18ae4164b9dfd57a9915f1c4, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011106391606, guid: e07cdc7f18ae4164b9dfd57a9915f1c4, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}

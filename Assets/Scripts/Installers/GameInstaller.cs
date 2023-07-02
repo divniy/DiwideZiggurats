@@ -6,8 +6,12 @@ namespace Diwide.Ziggurat.Installers
     {
         public override void InstallBindings()
         {
+            SignalBusInstaller.Install(Container);
+            Container.DeclareSignal<TeamSelectedSignal>();
+            
             Container.Bind<CameraController>().FromComponentInHierarchy().AsSingle();
             Container.Bind<UnitSpawnPoint>().FromComponentInHierarchy().AsTransient();
+            Container.Bind<GateFacade>().FromComponentsInHierarchy().AsTransient();
         }
     }
 }
