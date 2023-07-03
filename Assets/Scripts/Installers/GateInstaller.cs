@@ -26,6 +26,7 @@ namespace Diwide.Ziggurat.Installers
                     .ByNewContextPrefab(unitPrefab)
                     .UnderTransformGroup("SpawnPoint")
                 );
+            
             Container.BindInterfacesAndSelfTo<UnitSpawner>().AsSingle().WithArguments(spawnPoint);
             // Container.BindInstance(spawnPoint).WhenInjectedInto<UnitSpawner>();
             Container.Bind<UnitSpawnPoint>().FromComponentInChildren().AsSingle();
