@@ -8,7 +8,9 @@ namespace Diwide.Ziggurat
     public class GateSelector : IInitializable, IDisposable
     {
         [Inject] private GateFacade _gateFacade;
+        [Inject] private UnitSettings _unitSettings;
         [Inject] private SignalBus _signalBus;
+        [Inject] private PopupPresenter _popupPresenter;
 
         public bool isSelected;
         // [Inject] private UnitRegistry _unitRegistry;
@@ -38,11 +40,13 @@ namespace Diwide.Ziggurat
         public void Select()
         {
             isSelected = true;
+            _popupPresenter.Show(_unitSettings);
         }
 
         public void Deselect()
         {
             isSelected = false;
+            // _popupPresenter.Hide();
             // foreach (var unit in _unitRegistry.Units)
             // {
             // unit.UnitSelector.DeselectUnit();

@@ -28,9 +28,9 @@ namespace Diwide.Ziggurat
         private void OnTriggerEnter(Collider other)
         {
             bool isWeapon = other.CompareTag(_settings.weaponTag);
-            var otherRootGameObject = other.attachedRigidbody.gameObject;
+            var otherRootGameObject = other.attachedRigidbody?.gameObject;
             bool isEnemy = gameObject.layer != otherRootGameObject.layer;
-            if (isWeapon && isEnemy)
+            if (isWeapon && otherRootGameObject && isEnemy)
             {
                 UnitFacade enemyFacade = otherRootGameObject.GetComponent<UnitFacade>();
                 enemyFacade.OnEnemyHitAction(_facade.HealthHandler);
