@@ -29,7 +29,7 @@ namespace Diwide.Ziggurat
         {
             bool isWeapon = other.CompareTag(_settings.weaponTag);
             var otherRootGameObject = other.attachedRigidbody?.gameObject;
-            bool isEnemy = gameObject.layer != otherRootGameObject.layer;
+            bool isEnemy = gameObject.layer != otherRootGameObject?.layer;
             if (isWeapon && otherRootGameObject && isEnemy)
             {
                 UnitFacade enemyFacade = otherRootGameObject.GetComponent<UnitFacade>();
