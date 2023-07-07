@@ -109,7 +109,7 @@ NavMeshSettings:
     agentRadius: 0.5
     agentHeight: 2
     agentSlope: 45
-    agentClimb: 0.4
+    agentClimb: 0.5
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 5e6df238334464ae2b479d37cb4edcb4, type: 2}
 --- !u!1001 &6742464
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -133,6 +133,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_Name
       value: Sig Sag  Pyramid (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
@@ -200,6 +204,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sig Sag  Pyramid (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
       value: 54
@@ -265,6 +273,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_Name
       value: Sig Sag  Pyramid (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
@@ -332,6 +344,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform 1x13x13 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -397,6 +413,10 @@ PrefabInstance:
     - target: {fileID: 1000012712754930, guid: c0629ec7492d192449701967ef3c3894, type: 3}
       propertyPath: m_Name
       value: Floor Blocks 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012712754930, guid: c0629ec7492d192449701967ef3c3894, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4000012413913880, guid: c0629ec7492d192449701967ef3c3894, type: 3}
       propertyPath: m_RootOrder
@@ -495,6 +515,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform 1x13x13 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -561,6 +585,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform 1x13x13 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -626,6 +654,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
       propertyPath: m_Name
       value: Platform 1x13x13 Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
       propertyPath: m_RootOrder
@@ -867,6 +899,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sig Sag  Pyramid (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
       value: 55
@@ -932,6 +968,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_Name
       value: Sig Sag  Pyramid (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
@@ -999,6 +1039,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sig Sag  Pyramid (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
       value: 41
@@ -1064,6 +1108,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_Name
       value: Sig Sag  Pyramid (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
@@ -1131,6 +1179,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stairs 5 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011498305294, guid: 5c72e4b087a9733449c797b71a071e86, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013182134632, guid: 5c72e4b087a9733449c797b71a071e86, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1179,6 +1231,34 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9e27bf700f7c24840bc80e8820b61d39, type: 2}
+    - target: {fileID: 271219507652918682, guid: 5c72e4b087a9733449c797b71a071e86, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2188792272500496601, guid: 5c72e4b087a9733449c797b71a071e86, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2842236861544265802, guid: 5c72e4b087a9733449c797b71a071e86, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5127339018786195279, guid: 5c72e4b087a9733449c797b71a071e86, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6048272874780062345, guid: 5c72e4b087a9733449c797b71a071e86, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6123543398987144210, guid: 5c72e4b087a9733449c797b71a071e86, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8118195314306419399, guid: 5c72e4b087a9733449c797b71a071e86, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c72e4b087a9733449c797b71a071e86, type: 3}
 --- !u!1001 &436936777
@@ -1191,6 +1271,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_Name
       value: Sig Sag  Pyramid (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
@@ -1276,6 +1360,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sig Sag  Pyramid (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -1341,6 +1429,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_Name
       value: Sig Sag  Pyramid (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
@@ -1408,6 +1500,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sig Sag  Pyramid (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
       value: 21
@@ -1473,6 +1569,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_Name
       value: Sig Sag  Pyramid (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
@@ -1540,6 +1640,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floor Blocks 2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000012712754930, guid: c0629ec7492d192449701967ef3c3894, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012413913880, guid: c0629ec7492d192449701967ef3c3894, type: 3}
       propertyPath: m_RootOrder
       value: 58
@@ -1605,6 +1709,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_Name
       value: Sig Sag  Pyramid (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
@@ -1792,6 +1900,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sig Sag  Pyramid (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
       value: 28
@@ -1857,6 +1969,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_Name
       value: Sig Sag  Pyramid (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
@@ -1924,6 +2040,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sig Sag  Pyramid (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
       value: 37
@@ -1989,6 +2109,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_Name
       value: Sig Sag  Pyramid (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
@@ -2056,6 +2180,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sig Sag  Pyramid (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
       value: 45
@@ -2121,6 +2249,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
       propertyPath: m_Name
       value: Platform 1x13x13 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
       propertyPath: m_RootOrder
@@ -2188,6 +2320,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sig Sag  Pyramid (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
       value: 48
@@ -2253,6 +2389,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_Name
       value: Sig Sag  Pyramid (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
@@ -2320,6 +2460,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform 1x13x13 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -2385,6 +2529,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_Name
       value: Sig Sag  Pyramid (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
@@ -2452,6 +2600,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sig Sag  Pyramid (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
       value: 46
@@ -2514,6 +2666,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5008266625702614578, guid: 410242799267a484cb8507e7ed046925, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5008266628918489292, guid: 410242799267a484cb8507e7ed046925, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5008955477841209014, guid: 410242799267a484cb8507e7ed046925, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -2524,7 +2684,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5008955477841209014, guid: 410242799267a484cb8507e7ed046925, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.55
+      value: 6.2
       objectReference: {fileID: 0}
     - target: {fileID: 5008955477841209014, guid: 410242799267a484cb8507e7ed046925, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2582,6 +2742,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_Name
       value: Sig Sag  Pyramid (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
@@ -2649,6 +2813,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform 1x13x13 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -2714,6 +2882,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: e8e4f6970ef10f54b8ee4aadb8e29bff, type: 3}
       propertyPath: m_Name
       value: Floor Blocks 12 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e8e4f6970ef10f54b8ee4aadb8e29bff, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e8e4f6970ef10f54b8ee4aadb8e29bff, type: 3}
       propertyPath: m_RootOrder
@@ -2781,6 +2953,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sig Sag  Pyramid (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
       value: 35
@@ -2846,6 +3022,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 71dd2238ee2695749873f175c90d5448, type: 3}
       propertyPath: m_Name
       value: Fence Dark Corner
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 71dd2238ee2695749873f175c90d5448, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 71dd2238ee2695749873f175c90d5448, type: 3}
       propertyPath: m_RootOrder
@@ -2961,6 +3141,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sig Sag  Pyramid (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
       value: 39
@@ -3023,6 +3207,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5008266625702614578, guid: 410242799267a484cb8507e7ed046925, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5008266628918489292, guid: 410242799267a484cb8507e7ed046925, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5008955477841209014, guid: 410242799267a484cb8507e7ed046925, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -3033,7 +3225,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5008955477841209014, guid: 410242799267a484cb8507e7ed046925, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.55
+      value: 6.2
       objectReference: {fileID: 0}
     - target: {fileID: 5008955477841209014, guid: 410242799267a484cb8507e7ed046925, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3095,6 +3287,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_Name
       value: Sig Sag  Pyramid (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
@@ -3162,6 +3358,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform 1x13x13 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -3227,6 +3427,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_Name
       value: Sig Sag  Pyramid (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
@@ -3294,6 +3498,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform 1x13x13 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -3360,6 +3568,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform 1x13x13 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -3425,6 +3637,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
       propertyPath: m_Name
       value: Platform 1x13x13
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
       propertyPath: m_RootOrder
@@ -3586,6 +3802,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform 1x13x13 Green
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3651,6 +3871,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
       propertyPath: m_Name
       value: Platform 1x13x13 Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
       propertyPath: m_RootOrder
@@ -3784,6 +4008,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sig Sag  Pyramid (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
       value: 47
@@ -3849,6 +4077,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_Name
       value: Sig Sag  Pyramid (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
@@ -3916,6 +4148,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sig Sag  Pyramid (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
       value: 43
@@ -3981,6 +4217,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
       propertyPath: m_Name
       value: Platform 1x13x13 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
       propertyPath: m_RootOrder
@@ -4048,6 +4288,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sig Sag  Pyramid (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
       value: 50
@@ -4114,6 +4358,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform 1x13x13 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -4179,6 +4427,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_Name
       value: Sig Sag  Pyramid (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
@@ -4340,6 +4592,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stairs 5 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011498305294, guid: 5c72e4b087a9733449c797b71a071e86, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013182134632, guid: 5c72e4b087a9733449c797b71a071e86, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -4388,6 +4644,34 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9e27bf700f7c24840bc80e8820b61d39, type: 2}
+    - target: {fileID: 271219507652918682, guid: 5c72e4b087a9733449c797b71a071e86, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2188792272500496601, guid: 5c72e4b087a9733449c797b71a071e86, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2842236861544265802, guid: 5c72e4b087a9733449c797b71a071e86, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5127339018786195279, guid: 5c72e4b087a9733449c797b71a071e86, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6048272874780062345, guid: 5c72e4b087a9733449c797b71a071e86, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6123543398987144210, guid: 5c72e4b087a9733449c797b71a071e86, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8118195314306419399, guid: 5c72e4b087a9733449c797b71a071e86, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c72e4b087a9733449c797b71a071e86, type: 3}
 --- !u!1001 &1551203232
@@ -4474,6 +4758,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: e8e4f6970ef10f54b8ee4aadb8e29bff, type: 3}
       propertyPath: m_Name
       value: Floor Blocks 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e8e4f6970ef10f54b8ee4aadb8e29bff, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e8e4f6970ef10f54b8ee4aadb8e29bff, type: 3}
       propertyPath: m_RootOrder
@@ -4588,6 +4876,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sig Sag  Pyramid (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
       value: 51
@@ -4653,6 +4945,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_Name
       value: Sig Sag  Pyramid
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
@@ -4786,6 +5082,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform 1x13x13 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -4852,6 +5152,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stairs 5 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011498305294, guid: 5c72e4b087a9733449c797b71a071e86, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013182134632, guid: 5c72e4b087a9733449c797b71a071e86, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -4900,6 +5204,34 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9e27bf700f7c24840bc80e8820b61d39, type: 2}
+    - target: {fileID: 271219507652918682, guid: 5c72e4b087a9733449c797b71a071e86, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2188792272500496601, guid: 5c72e4b087a9733449c797b71a071e86, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2842236861544265802, guid: 5c72e4b087a9733449c797b71a071e86, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5127339018786195279, guid: 5c72e4b087a9733449c797b71a071e86, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6048272874780062345, guid: 5c72e4b087a9733449c797b71a071e86, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6123543398987144210, guid: 5c72e4b087a9733449c797b71a071e86, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8118195314306419399, guid: 5c72e4b087a9733449c797b71a071e86, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c72e4b087a9733449c797b71a071e86, type: 3}
 --- !u!1001 &1761189450
@@ -4912,6 +5244,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
       propertyPath: m_Name
       value: Platform 1x13x13 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
       propertyPath: m_RootOrder
@@ -4978,6 +5314,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
       propertyPath: m_Name
       value: Platform 1x13x13 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
       propertyPath: m_RootOrder
@@ -5124,6 +5464,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sig Sag  Pyramid (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
       value: 23
@@ -5186,6 +5530,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5008266625702614578, guid: 410242799267a484cb8507e7ed046925, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5008266628918489292, guid: 410242799267a484cb8507e7ed046925, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 5008955477841209014, guid: 410242799267a484cb8507e7ed046925, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -5196,7 +5548,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5008955477841209014, guid: 410242799267a484cb8507e7ed046925, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.55
+      value: 6.2
       objectReference: {fileID: 0}
     - target: {fileID: 5008955477841209014, guid: 410242799267a484cb8507e7ed046925, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5258,6 +5610,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
       propertyPath: m_Name
       value: Platform 1x13x13 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
       propertyPath: m_RootOrder
@@ -5434,6 +5790,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform 1x13x13 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d2e14abe5970bf44b8c52c3a4ed682cb, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -5597,6 +5957,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sig Sag  Pyramid (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
       value: 26
@@ -5662,6 +6026,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_Name
       value: Sig Sag  Pyramid (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d14aa16cba6fbb849addc4054627712f, type: 3}
       propertyPath: m_RootOrder
