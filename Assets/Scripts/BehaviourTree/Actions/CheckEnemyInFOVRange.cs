@@ -8,10 +8,8 @@ namespace Diwide.Ziggurat.BehaviourTree.Actions
     {
         public float range = 2f;
         private LayerMask _enemyLayerMask = 1 << 6 | 1 << 7 | 1 << 8;
-        // private Transform _target;
         protected override void OnStart()
         {
-            // _target = blackboard.target;
             _enemyLayerMask &= ~(1 << context.gameObject.layer);
         }
 
@@ -23,7 +21,6 @@ namespace Diwide.Ziggurat.BehaviourTree.Actions
         {
             if (blackboard.HasTarget())
             {
-                // blackboard.moveToPosition = blackboard.target.position;
                 return State.Success;
             }
 
@@ -39,7 +36,6 @@ namespace Diwide.Ziggurat.BehaviourTree.Actions
                     .First().collider;
                     
                 blackboard.Target = closestCollider.gameObject;
-                // blackboard.moveToPosition = blackboard.target.position;
                 return State.Success;
             }
 

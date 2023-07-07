@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="25a66e02-5e54-4275-8f24-c717029d0d0e" name="Changes" comment="Add workspace">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.DiwideZiggurats/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.DiwideZiggurats/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Unity UI Samples/Materials/Slider Fill.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity UI Samples/Materials/Slider Fill.mat" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="release" />
+      </map>
+    </option>
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="HighlightingMarkupGrave">
+    <markupCoffin contentHash="1842980314" url="file://$PROJECT_DIR$/Assets/Scripts/CameraController.cs">
+      <highlighter start="34" end="52" layer="4001" target="0">
+        <option name="myExternalName" value="NOT_USED_ELEMENT_ATTRIBUTES" />
+      </highlighter>
+      <highlighter start="154" end="160" layer="3999" target="0">
+        <option name="myExternalName" value="SUGGESTION" />
+      </highlighter>
+      <highlighter start="442" end="447" layer="4000" target="0">
+        <option name="myExternalName" value="WARNING_ATTRIBUTES" />
+      </highlighter>
+      <highlighter start="485" end="492" layer="4001" target="0">
+        <option name="myExternalName" value="NOT_USED_ELEMENT_ATTRIBUTES" />
+      </highlighter>
+      <highlighter start="561" end="571" layer="4000" target="0">
+        <option name="myExternalName" value="WARNING_ATTRIBUTES" />
+      </highlighter>
+      <highlighter start="655" end="667" layer="4000" target="0">
+        <option name="myExternalName" value="WARNING_ATTRIBUTES" />
+      </highlighter>
+      <highlighter start="750" end="762" layer="4000" target="0">
+        <option name="myExternalName" value="WARNING_ATTRIBUTES" />
+      </highlighter>
+      <highlighter start="925" end="937" layer="4001" target="0">
+        <option name="myExternalName" value="NOT_USED_ELEMENT_ATTRIBUTES" />
+      </highlighter>
+      <highlighter start="2050" end="2059" layer="4000" target="0">
+        <option name="myExternalName" value="WARNING_ATTRIBUTES" />
+      </highlighter>
+      <highlighter start="2543" end="2552" layer="4000" target="0">
+        <option name="myExternalName" value="WARNING_ATTRIBUTES" />
+      </highlighter>
+    </markupCoffin>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2d3cad03588943fc90f51e3a398657ce81f600/c6/33706fbf/Selection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4e92b36994e34f25b75a9bd9329ee87c3d000/46/9f0541f6/GraphView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/0f/f5b43ff2/IReadOnlyDictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65a1e0840c48486cae789f6b5d6fb172159e00/60/e9607d28/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65a1e0840c48486cae789f6b5d6fb172159e00/f8/1278aea9/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65a1e0840c48486cae789f6b5d6fb172159e00/f8/1bc51b29/ScriptableObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/65a1e0840c48486cae789f6b5d6fb172159e00/ff/7ab86ddc/LayerMask.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/997f22c511024d5c8f7e21042ce2573027000/3e/df504431/Animator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ea7989a50568403f9487d8449bffefc745200/22/e7ad6245/ISelectHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f5b293c74049457cabc28437c5a763925a00/85/a817434d/IInitializable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7d303c2bf72cd4cec95665b89c457d265d2b8ef3ed6da17cd4f85587c2f9de7/System.Linq.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/divniy/workspace/unity/DiwideZiggurats/Assets/Resources/Prefabs/UnitHero Red.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/divniy/workspace/unity/DiwideZiggurats/Assets/Scenes/MainScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BehaviourTree/Actions/AttackTask.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BehaviourTree/Actions/CheckEnemyInAttackRange.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BehaviourTree/Decorators/SetTargetPositionDecorator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/divniy/workspace/unity/DiwideZiggurats/Assets/Scripts/CameraController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GateFacade.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GateSelector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Installers/PopupInstaller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnitDebug.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/divniy/workspace/unity/DiwideZiggurats/Assets/Scripts/UnitIncomingHitHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnitRegistry.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnitSelector.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TheKiwiCoder/BehaviourTree/Scripts/Actions/MoveToPosition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.dbrizov.naughtyattributes@2.1.4/Scripts/Core/MetaAttributes/MetaAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.dbrizov.naughtyattributes@2.1.4/Scripts/Core/MetaAttributes/ReadOnlyAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.dbrizov.naughtyattributes@2.1.4/Scripts/Editor/Utility/ReflectionUtility.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.rotaryheart.serializabledictionarylite@2.6.11/Rotary Heart/SerializableDictionaryLite/SerializableDictionaryBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.svermeulen.extenject@19442ad04e/Samples~/SampleGame2 (Advanced)/Scripts/Misc/EnemySpawner.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.svermeulen.extenject@19442ad04e/Source/Runtime/Binding/Binders/Factory/FactoryFromBinder/SubContainerBinder/FactorySubContainerBinderBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.svermeulen.extenject@19442ad04e/Source/Runtime/Install/Contexts/SceneContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.svermeulen.extenject@19442ad04e/Source/Runtime/Kernels/DefaultGameObjectKernel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.svermeulen.extenject@19442ad04e/Source/Runtime/Main/DiContainer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.svermeulen.extenject@19442ad04e/Source/Runtime/Managers/PoolableManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.svermeulen.extenject@19442ad04e/Source/Runtime/Providers/SubContainerCreators/SubContainerCreatorDynamicContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ToggleGroup.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2QjBwp6OTIyjlCUHVofvEXJDvJr" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.build.unityPlugin&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/divniy/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/divniy/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache&quot;,
+      &quot;/Users/divniy/.local/share/Symbols/src&quot;
+    ]
+  }
+}</component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2021.3.26f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath $PROJECT_DIR$ -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2021.3.26f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath $PROJECT_DIR$ -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="25a66e02-5e54-4275-8f24-c717029d0d0e" name="Changes" comment="" />
+      <created>1681479595704</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681479595704</updated>
+      <workItem from="1685857353435" duration="37000" />
+      <workItem from="1685857478881" duration="2326000" />
+      <workItem from="1686119464943" duration="16359000" />
+      <workItem from="1686489340793" duration="54576000" />
+      <workItem from="1687553574892" duration="57450000" />
+      <workItem from="1687885882623" duration="3881000" />
+      <workItem from="1687904462446" duration="7426000" />
+      <workItem from="1688222030632" duration="13793000" />
+      <workItem from="1688247317576" duration="160000" />
+      <workItem from="1688247536599" duration="17771000" />
+      <workItem from="1688333891616" duration="627000" />
+      <workItem from="1688349823066" duration="1808000" />
+      <workItem from="1688352394661" duration="8090000" />
+      <workItem from="1688375426119" duration="21610000" />
+      <workItem from="1688424469413" duration="1264000" />
+      <workItem from="1688427035037" duration="12370000" />
+      <workItem from="1688740202927" duration="266000" />
+    </task>
+    <task id="LOCAL-00001" summary="Rename and move files">
+      <option name="closed" value="true" />
+      <created>1685857529363</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685857529363</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Rename and move files">
+      <option name="closed" value="true" />
+      <created>1685857548174</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685857548174</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Rename and move files">
+      <option name="closed" value="true" />
+      <created>1685858654119</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685858654119</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add game installer">
+      <option name="closed" value="true" />
+      <created>1685858816063</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685858816063</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add user hero prefab">
+      <option name="closed" value="true" />
+      <created>1685859794098</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1685859794098</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add user hero prefab">
+      <option name="closed" value="true" />
+      <created>1685859803471</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685859803471</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add behaviour tree by KiwiCoder">
+      <option name="closed" value="true" />
+      <created>1686434035278</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1686434035278</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add unit debug component">
+      <option name="closed" value="true" />
+      <created>1686455382516</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1686455382516</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add blackboard and behaviour tree packages">
+      <option name="closed" value="true" />
+      <created>1686455906017</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1686455906017</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Move to center of arena. If detect enemy in FOV - set it as target and close the distance.">
+      <option name="closed" value="true" />
+      <created>1687037971796</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1687037971796</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add CheckEnemyInAttackRange and AttackTask">
+      <option name="closed" value="true" />
+      <created>1687042034823</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1687042034823</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add CheckEnemyInAttackRange and AttackTask">
+      <option name="closed" value="true" />
+      <created>1687042045292</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1687042045292</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Add random attacks">
+      <option name="closed" value="true" />
+      <created>1687044040557</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1687044040557</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Add random selector composite with explicit probability values">
+      <option name="closed" value="true" />
+      <created>1687049254426</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1687049254426</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Add random selector composite with explicit probability values">
+      <option name="closed" value="true" />
+      <created>1687051159215</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1687051159216</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Fix: add failure state to attack sequence">
+      <option name="closed" value="true" />
+      <created>1687051993571</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1687051993572</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Add wandering behaviour branch">
+      <option name="closed" value="true" />
+      <created>1687053902518</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1687053902518</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Refactor class names">
+      <option name="closed" value="true" />
+      <created>1687054517446</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1687054517446</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Refactor CheckEnemyInAttackRange action">
+      <option name="closed" value="true" />
+      <created>1687055337094</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1687055337094</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Refactor target position decorator">
+      <option name="closed" value="true" />
+      <created>1687055803762</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1687055803762</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Add spawn/despawn logic">
+      <option name="closed" value="true" />
+      <created>1687772030084</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1687772030085</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Add unit health handler">
+      <option name="closed" value="true" />
+      <created>1687829769736</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1687829769736</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Add Unit spawner">
+      <option name="closed" value="true" />
+      <created>1687832799955</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1687832799955</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Add unit incoming hit handler">
+      <option name="closed" value="true" />
+      <created>1687881602809</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1687881602809</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Add unit incoming hit handler">
+      <option name="closed" value="true" />
+      <created>1687881996557</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1687881996557</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Fix misplaced repeat decorator. Select closest target in field of view. Add GO random names factory">
+      <option name="closed" value="true" />
+      <created>1687890249336</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1687890249336</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Add gate selection basic logic">
+      <option name="closed" value="true" />
+      <created>1688217907490</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1688217907490</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Add unit selector and registry">
+      <option name="closed" value="true" />
+      <created>1688225954128</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1688225954128</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Unpack gates">
+      <option name="closed" value="true" />
+      <created>1688226230359</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1688226230359</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Fix unit registry">
+      <option name="closed" value="true" />
+      <created>1688237310045</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1688237310045</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Add settings for tests">
+      <option name="closed" value="true" />
+      <created>1688241076890</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1688241076890</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Add attack probability to settings">
+      <option name="closed" value="true" />
+      <created>1688244418547</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1688244418547</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Add selection logic">
+      <option name="closed" value="true" />
+      <created>1688286763087</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1688286763087</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Add canvas">
+      <option name="closed" value="true" />
+      <created>1688349948552</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1688349948552</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Add popup template">
+      <option name="closed" value="true" />
+      <created>1688353077914</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1688353077914</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Slider with text input has the bug">
+      <option name="closed" value="true" />
+      <created>1688375254900</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1688375254901</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Add pre-releases">
+      <option name="closed" value="true" />
+      <created>1688376127080</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1688376127080</updated>
+    </task>
+    <task id="LOCAL-00038" summary="test commit">
+      <option name="closed" value="true" />
+      <created>1688376284842</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1688376284842</updated>
+    </task>
+    <task id="LOCAL-00039" summary="add unirx">
+      <option name="closed" value="true" />
+      <created>1688386676185</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1688386676185</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Add basic ui">
+      <option name="closed" value="true" />
+      <created>1688411037828</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1688411037828</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Add Healthbar shader, material and installer">
+      <option name="closed" value="true" />
+      <created>1688430481616</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1688430481616</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Refactor health handler">
+      <option name="closed" value="true" />
+      <created>1688434278913</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1688434278913</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Add deselect logic">
+      <option name="closed" value="true" />
+      <created>1688735187759</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1688735187759</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Add gates to main scene">
+      <option name="closed" value="true" />
+      <created>1688737855116</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1688737855116</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Add units">
+      <option name="closed" value="true" />
+      <created>1688738828007</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1688738828007</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Remove old gates">
+      <option name="closed" value="true" />
+      <created>1688738879488</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1688738879488</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Fix some issues">
+      <option name="closed" value="true" />
+      <created>1688740072737</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1688740072737</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Add Unit spawner" />
+    <MESSAGE value="Add unit incoming hit handler" />
+    <MESSAGE value="Fix misplaced repeat decorator. Select closest target in field of view. Add GO random names factory" />
+    <MESSAGE value="Add gate selection basic logic" />
+    <MESSAGE value="Add unit selector and registry" />
+    <MESSAGE value="Unpack gates" />
+    <MESSAGE value="Fix unit registry" />
+    <MESSAGE value="Add settings for tests" />
+    <MESSAGE value="Add attack probability to settings" />
+    <MESSAGE value="Add selection logic" />
+    <MESSAGE value="Add canvas" />
+    <MESSAGE value="Add popup template" />
+    <MESSAGE value="Slider with text input has the bug" />
+    <MESSAGE value="Add pre-releases" />
+    <MESSAGE value="add unirx" />
+    <MESSAGE value="test commit" />
+    <MESSAGE value="Add basic ui" />
+    <MESSAGE value="Add Healthbar shader, material and installer" />
+    <MESSAGE value="Refactor health handler" />
+    <MESSAGE value="Add deselect logic" />
+    <MESSAGE value="Add gates to main scene" />
+    <MESSAGE value="Add units" />
+    <MESSAGE value="Remove old gates" />
+    <MESSAGE value="Fix some issues" />
+    <MESSAGE value="Add workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add workspace" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/UI/HealthbarPresenter.cs</url>
+          <line>30</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/UI/HealthbarPresenter.cs" initialLine="29" containingFunctionPresentation="Method 'UpdateValue'" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/UI/HealthbarPresenter.cs</url>
+          <line>25</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/UI/HealthbarPresenter.cs" initialLine="25" containingFunctionPresentation="Method 'Initialize'" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
