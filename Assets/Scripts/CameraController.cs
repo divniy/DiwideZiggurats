@@ -17,7 +17,6 @@ namespace Diwide.Ziggurat
         private LayerMask _mask;
 
         private bool _activeRotate = false;
-        private bool _gateSelected;
 
         [SerializeField, Range(0.1f, 100f)]
         private float _moveSpeed = 10f;
@@ -105,7 +104,6 @@ namespace Diwide.Ziggurat
         {
             Debug.Log($"{selectedGameObject.layer} selected");
             _signalBus.Fire(new TeamSelectedSignal(){ layer = selectedGameObject.layer });
-            _gateSelected = true;
         }
 
         private void Deselect()
@@ -113,7 +111,6 @@ namespace Diwide.Ziggurat
             Debug.Log("Team deselected");
             _signalBus.Fire(new TeamSelectedSignal(){ layer = LayerMask.NameToLayer("Floor") });
             _popupPresenter.Hide();
-            _gateSelected = false;
         }
 
         private void OnEnable()
