@@ -31,6 +31,7 @@ namespace Diwide.Ziggurat
         // [Space, SerializeField] private BaseUnit _flagPrefab;
         [Inject] private SignalBus _signalBus;
         [Inject] private List<GateFacade> _gateFacades;
+        [Inject] private PopupPresenter _popupPresenter;
         
 
         private void Awake()
@@ -92,26 +93,26 @@ namespace Diwide.Ziggurat
             var ray = _camera.ScreenPointToRay(Mouse.current.position.ReadValue());
             if (Physics.Raycast(ray, out var hit, 1000f, _mask, QueryTriggerInteraction.Collide))
             {
-                _signalBus.Fire(new TeamSelectedSignal(){ layer = hit.collider.gameObject.layer });
-                // SelectGate(hit.collider.gameObject);
+                Select(hit.collider.gameObject);
             }
             else
             {
-                // DeselectGate();
+                Deselect();
             }
         }
 
-        private void SelectGate(GameObject gateGameObject)
+        private void Select(GameObject selectedGameObject)
         {
-            Debug.Log($"{gateGameObject.name} selected");
-            var gateFacade = gateGameObject.GetComponent<GateFacade>();
-            // gateFacade.Select();
+            Debug.Log($"{selectedGameObject.layer} selected");
+            _signalBus.Fire(new TeamSelectedSignal(){ layer = selectedGameObject.layer });
             _gateSelected = true;
         }
 
-        private void DeselectGate()
+        private void Deselect()
         {
-            Debug.Log("Gates deselected");
+            Debug.Log("Team deselected");
+            _signalBus.Fire(new TeamSelectedSignal(){ layer = LayerMask.NameToLayer("Floor") });
+            _popupPresenter.Hide();
             _gateSelected = false;
         }
 

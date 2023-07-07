@@ -46,11 +46,6 @@ namespace Diwide.Ziggurat
         public void Deselect()
         {
             isSelected = false;
-            // _popupPresenter.Hide();
-            // foreach (var unit in _unitRegistry.Units)
-            // {
-            // unit.UnitSelector.DeselectUnit();
-            // }
         }
 
     }

@@ -31,7 +31,6 @@ namespace Diwide.Ziggurat
 
         public void OnDespawned()
         {
-            // health = _maxHealth = default;
         }
 
         public void TakeDamage(float damage)
