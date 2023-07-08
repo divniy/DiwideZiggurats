@@ -30,6 +30,7 @@ namespace Diwide.Ziggurat
         public void OnSpawned(UnitSettings settings)
         {
             tree = _treePrototype.Clone();
+            tree.blackboard = new Blackboard();
             tree.blackboard.settings = settings;
             _context = CreateBehaviourTreeContext();
             tree.Bind(_context);

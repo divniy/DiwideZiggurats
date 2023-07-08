@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25a66e02-5e54-4275-8f24-c717029d0d0e" name="Changes" comment="Add workspace">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.DiwideZiggurats/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.DiwideZiggurats/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DiwideZiggurats/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DiwideZiggurats/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene/NavMesh.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BehaviourTree/Actions/CheckEnemyInFOVRange.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BehaviourTree/Actions/CheckEnemyInFOVRange.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnitBehaviourTreeRunner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnitBehaviourTreeRunner.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Unity UI Samples/Materials/Slider Fill.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity UI Samples/Materials/Slider Fill.mat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,40 +25,6 @@
       </map>
     </option>
     <option name="RESET_MODE" value="HARD" />
-  </component>
-  <component name="HighlightingMarkupGrave">
-    <markupCoffin contentHash="1842980314" url="file://$PROJECT_DIR$/Assets/Scripts/CameraController.cs">
-      <highlighter start="34" end="52" layer="4001" target="0">
-        <option name="myExternalName" value="NOT_USED_ELEMENT_ATTRIBUTES" />
-      </highlighter>
-      <highlighter start="154" end="160" layer="3999" target="0">
-        <option name="myExternalName" value="SUGGESTION" />
-      </highlighter>
-      <highlighter start="442" end="447" layer="4000" target="0">
-        <option name="myExternalName" value="WARNING_ATTRIBUTES" />
-      </highlighter>
-      <highlighter start="485" end="492" layer="4001" target="0">
-        <option name="myExternalName" value="NOT_USED_ELEMENT_ATTRIBUTES" />
-      </highlighter>
-      <highlighter start="561" end="571" layer="4000" target="0">
-        <option name="myExternalName" value="WARNING_ATTRIBUTES" />
-      </highlighter>
-      <highlighter start="655" end="667" layer="4000" target="0">
-        <option name="myExternalName" value="WARNING_ATTRIBUTES" />
-      </highlighter>
-      <highlighter start="750" end="762" layer="4000" target="0">
-        <option name="myExternalName" value="WARNING_ATTRIBUTES" />
-      </highlighter>
-      <highlighter start="925" end="937" layer="4001" target="0">
-        <option name="myExternalName" value="NOT_USED_ELEMENT_ATTRIBUTES" />
-      </highlighter>
-      <highlighter start="2050" end="2059" layer="4000" target="0">
-        <option name="myExternalName" value="WARNING_ATTRIBUTES" />
-      </highlighter>
-      <highlighter start="2543" end="2552" layer="4000" target="0">
-        <option name="myExternalName" value="WARNING_ATTRIBUTES" />
-      </highlighter>
-    </markupCoffin>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2d3cad03588943fc90f51e3a398657ce81f600/c6/33706fbf/Selection.cs" root0="SKIP_HIGHLIGHTING" />
@@ -194,6 +164,8 @@
       <workItem from="1688424469413" duration="1264000" />
       <workItem from="1688427035037" duration="12370000" />
       <workItem from="1688740202927" duration="266000" />
+      <workItem from="1688799557768" duration="144000" />
+      <workItem from="1688799790100" duration="5474000" />
     </task>
     <task id="LOCAL-00001" summary="Rename and move files">
       <option name="closed" value="true" />
@@ -619,24 +591,6 @@
     <MESSAGE value="Fix some issues" />
     <MESSAGE value="Add workspace" />
     <option name="LAST_COMMIT_MESSAGE" value="Add workspace" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/UI/HealthbarPresenter.cs</url>
-          <line>30</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/UI/HealthbarPresenter.cs" initialLine="29" containingFunctionPresentation="Method 'UpdateValue'" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/UI/HealthbarPresenter.cs</url>
-          <line>25</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/UI/HealthbarPresenter.cs" initialLine="25" containingFunctionPresentation="Method 'Initialize'" />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

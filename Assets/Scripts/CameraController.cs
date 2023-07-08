@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using NaughtyAttributes;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using Zenject;
 
@@ -31,10 +32,13 @@ namespace Diwide.Ziggurat
         [Inject] private SignalBus _signalBus;
         [Inject] private List<GateFacade> _gateFacades;
         [Inject] private PopupPresenter _popupPresenter;
+
+        private int UILayer;
         
 
         private void Awake()
         {
+            UILayer = LayerMask.NameToLayer("UI");
             _controls = new FreeCameraControls();
             _controls.Camera.Select.performed += OnClick;
             _controls.Camera.ActivateRotation.performed += OnActivateRotation;
@@ -89,6 +93,7 @@ namespace Diwide.Ziggurat
 
         private void OnClick(InputAction.CallbackContext obj)
         {
+            if(IsPointerOverUIElement()) return;
             var ray = _camera.ScreenPointToRay(Mouse.current.position.ReadValue());
             if (Physics.Raycast(ray, out var hit, 1000f, _mask, QueryTriggerInteraction.Collide))
             {
@@ -113,6 +118,34 @@ namespace Diwide.Ziggurat
             _popupPresenter.Hide();
         }
 
+        public bool IsPointerOverUIElement()
+        {
+            return IsPointerOverUIElement(GetEventSystemRaycastResults());
+        }
+ 
+ 
+        //Returns 'true' if we touched or hovering on Unity UI element.
+        private bool IsPointerOverUIElement(List<RaycastResult> eventSystemRaysastResults)
+        {
+            for (int index = 0; index < eventSystemRaysastResults.Count; index++)
+            {
+                RaycastResult curRaysastResult = eventSystemRaysastResults[index];
+                if (curRaysastResult.gameObject.layer == UILayer)
+                    return true;
+            }
+            return false;
+        }
+ 
+ 
+        //Gets all event system raycast results of current mouse or touch position.
+        static List<RaycastResult> GetEventSystemRaycastResults()
+        {
+            PointerEventData eventData = new PointerEventData(EventSystem.current);
+            eventData.position = Input.mousePosition;
+            List<RaycastResult> raysastResults = new List<RaycastResult>();
+            EventSystem.current.RaycastAll(eventData, raysastResults);
+            return raysastResults;
+        }
         private void OnEnable()
         {
             _controls.Camera.Enable();

@@ -25,21 +25,26 @@ namespace Diwide.Ziggurat.BehaviourTree.Actions
             }
 
             Collider[] colliders = Physics.OverlapSphere(context.transform.position, range, _enemyLayerMask, QueryTriggerInteraction.Ignore);
-            if (colliders.Length > 0 && colliders[0].gameObject.activeInHierarchy)
+            switch (colliders.Length)
             {
-                var closestCollider = colliders
-                    // .Where(_ => _.gameObject.activeInHierarchy)
-                    .Select(collider => new
-                        {collider, distance = Vector3.Distance(context.transform.position, collider.transform.position)}
-                    )
-                    .OrderBy(_ => _.distance)
-                    .First().collider;
+                case 1:
+                    blackboard.Target = colliders[0].gameObject;
+                    return State.Success;
+                case > 1:
+                {
+                    var closestCollider = colliders
+                        .Select(collider => new
+                            {collider, distance = Vector3.Distance(context.transform.position, collider.transform.position)}
+                        )
+                        .OrderBy(_ => _.distance)
+                        .First().collider;
                     
-                blackboard.Target = closestCollider.gameObject;
-                return State.Success;
+                    blackboard.Target = closestCollider.gameObject;
+                    return State.Success;
+                }
+                default:
+                    return State.Failure;
             }
-
-            return State.Failure;
         }
     }
 }
