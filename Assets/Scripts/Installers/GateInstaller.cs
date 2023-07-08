@@ -20,7 +20,7 @@ namespace Diwide.Ziggurat.Installers
             Container.Bind<UnitRegistry>().AsSingle();
             Container.BindFactory<UnitFacade, UnitFacade.Factory>()
                 .FromMonoPoolableMemoryPool<UnitFacade>(b => b
-                    .WithInitialSize(5)
+                    .WithInitialSize(10)
                     .FromSubContainerResolve()
                     // .ByNewPrefabInstaller<UnitInstaller>(unitPrefab)
                     .ByNewContextPrefab(unitPrefab)

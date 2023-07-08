@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using NaughtyAttributes;
+using UniRx;
 using UnityEngine;
 using Zenject;
 
@@ -19,7 +20,10 @@ namespace Diwide.Ziggurat
         public UnitSettings Settings => _settings;
         public Animator Animator => _animator;
         public UnitHealthHandler HealthHandler => _healthHandler;
+
+        // public IReadOnlyReactiveProperty<bool> IsDead => _healthHandler.IsDead;
         // public UnitSelector UnitSelector => _unitSelector;
+        public bool IsAlive => !HealthHandler.IsDead.Value;
         public event Action<UnitHealthHandler> EnemyHitAction;
         
         private IMemoryPool _pool;
@@ -35,6 +39,7 @@ namespace Diwide.Ziggurat
 
         public void OnDespawned()
         {
+            transform.localPosition = Vector3.zero;
             _pool = null;
             _unitRegistry.Remove(this);
             gameObject.layer = LayerMask.NameToLayer("Default");

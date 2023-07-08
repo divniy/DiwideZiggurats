@@ -1,5 +1,8 @@
+using System;
 using Diwide.Ziggurat;
 using UnityEngine;
+using UnityEngine.InputSystem.Utilities;
+using UniRx;
 
 namespace TheKiwiCoder {
 
@@ -9,21 +12,32 @@ namespace TheKiwiCoder {
     [System.Serializable]
     public class Blackboard {
 
-        private GameObject _target;
+        private UnitFacade _target;
+        private IDisposable _disposable;
         public Vector3 moveToPosition;
 
-        public GameObject Target
+        public UnitFacade Target
         {
-            get => (_target && _target.gameObject.activeInHierarchy) ? _target : null;
-            set => _target = value;
+            get => _target;
+            set
+            {
+                _target = value;
+                _disposable = _target.HealthHandler.IsDead.Subscribe(_ => NullifyTarget(_));
+            }
         }
 
         public UnitSettings settings;
-        
+
+        private void NullifyTarget(bool res)
+        {
+            if (!res) return;
+            _target = null;
+            _disposable.Dispose();
+        }
 
         public bool HasTarget()
         {
-            return _target && _target.activeInHierarchy;
+            return Target && Target.IsAlive;
         }
     }
 }

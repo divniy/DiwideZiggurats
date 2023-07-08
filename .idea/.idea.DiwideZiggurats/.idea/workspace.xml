@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25a66e02-5e54-4275-8f24-c717029d0d0e" name="Changes" comment="Add workspace">
+    <list default="true" id="25a66e02-5e54-4275-8f24-c717029d0d0e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DiwideZiggurats/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DiwideZiggurats/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene/NavMesh.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/KiwiBehaviourTree.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/KiwiBehaviourTree.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BehaviourTree/Actions/CheckEnemyInFOVRange.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BehaviourTree/Actions/CheckEnemyInFOVRange.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnitBehaviourTreeRunner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnitBehaviourTreeRunner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BehaviourTree/Actions/CheckEnemyIsAlive.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BehaviourTree/Actions/CheckEnemyIsAlive.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BehaviourTree/Decorators/SetTargetPositionDecorator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BehaviourTree/Decorators/SetTargetPositionDecorator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/GateInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/GateInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnitFacade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnitFacade.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UnitHealthHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UnitHealthHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TheKiwiCoder/BehaviourTree/Scripts/Runtime/Blackboard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TheKiwiCoder/BehaviourTree/Scripts/Runtime/Blackboard.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Unity UI Samples/Materials/Slider Fill.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity UI Samples/Materials/Slider Fill.mat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,12 +24,13 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="release" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2d3cad03588943fc90f51e3a398657ce81f600/c6/33706fbf/Selection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4e92b36994e34f25b75a9bd9329ee87c3d000/46/9f0541f6/GraphView.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/0f/f5b43ff2/IReadOnlyDictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
@@ -39,17 +43,13 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f5b293c74049457cabc28437c5a763925a00/85/a817434d/IInitializable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7d303c2bf72cd4cec95665b89c457d265d2b8ef3ed6da17cd4f85587c2f9de7/System.Linq.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/divniy/workspace/unity/DiwideZiggurats/Assets/Resources/Prefabs/UnitHero Red.prefab" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/divniy/workspace/unity/DiwideZiggurats/Assets/Scenes/MainScene.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BehaviourTree/Actions/AttackTask.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BehaviourTree/Actions/CheckEnemyInAttackRange.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BehaviourTree/Decorators/SetTargetPositionDecorator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/divniy/workspace/unity/DiwideZiggurats/Assets/Scripts/CameraController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GateFacade.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GateSelector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Installers/PopupInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnitDebug.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/divniy/workspace/unity/DiwideZiggurats/Assets/Scripts/UnitIncomingHitHandler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnitRegistry.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UnitSelector.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/TheKiwiCoder/BehaviourTree/Scripts/Actions/MoveToPosition.cs" root0="FORCE_HIGHLIGHTING" />
@@ -98,7 +98,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2021.3.26f1/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath $PROJECT_DIR$ -debugCodeOptimization" />
@@ -125,10 +125,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="41750">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="41750" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -166,6 +166,8 @@
       <workItem from="1688740202927" duration="266000" />
       <workItem from="1688799557768" duration="144000" />
       <workItem from="1688799790100" duration="5474000" />
+      <workItem from="1688825408905" duration="129000" />
+      <workItem from="1688825582533" duration="7914000" />
     </task>
     <task id="LOCAL-00001" summary="Rename and move files">
       <option name="closed" value="true" />
@@ -591,6 +593,25 @@
     <MESSAGE value="Fix some issues" />
     <MESSAGE value="Add workspace" />
     <option name="LAST_COMMIT_MESSAGE" value="Add workspace" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/BehaviourTree/Actions/CheckEnemyInFOVRange.cs</url>
+          <line>37</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/BehaviourTree/Actions/CheckEnemyInFOVRange.cs" initialLine="37" containingFunctionPresentation="Method 'OnUpdate'">
+            <startOffsets>
+              <option value="1357" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1426" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -21,7 +21,6 @@ MonoBehaviour:
   - rid: 3539284211612254211
   - rid: 3539284211612254212
   - rid: 3539284211612254215
-  - rid: 3539284211612254219
   - rid: 3539284211612254225
   - rid: 3539284211612254226
   - rid: 3539284211612254231
@@ -36,12 +35,11 @@ MonoBehaviour:
   - rid: 3539284359028932611
   - rid: 3539284359028932612
   - rid: 3539284359028932613
-  - rid: 3539284542914297857
   treeState: 0
   blackboard:
     moveToPosition: {x: 0, y: 0, z: 0}
     settings: {fileID: 0}
-  viewPosition: {x: 598, y: 157, z: 0}
+  viewPosition: {x: 551, y: 360, z: 0}
   viewScale: {x: 0.25, y: 0.25, z: 1}
   references:
     version: 2
@@ -83,7 +81,7 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: 02a915028e51b476488a6018d82f1f05
-        position: {x: 105.49988, y: -569.4999}
+        position: {x: 105.5, y: -569.5}
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           settings: {fileID: 0}
@@ -91,8 +89,6 @@ MonoBehaviour:
         drawGizmos: 0
         children:
         - rid: 3539284211612254211
-        - rid: 3539284542914297857
-        - rid: 3539284211612254219
         - rid: 3539284359028932613
     - rid: 3539284211612254211
       type: {class: CheckEnemyInFOVRange, ns: Diwide.Ziggurat.BehaviourTree.Actions, asm: Assembly-CSharp}
@@ -100,7 +96,7 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: 51778cb802d644b47ab8a8d52e276c0b
-        position: {x: -287.99988, y: -444.5}
+        position: {x: -79.5, y: -444.5}
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           settings: {fileID: 0}
@@ -113,7 +109,7 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: e4d2d2a8ef10f4d3c90f1d39822d2d15
-        position: {x: 284.5, y: -330.00003}
+        position: {x: 260.5, y: -330}
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           settings: {fileID: 0}
@@ -140,19 +136,6 @@ MonoBehaviour:
         - rid: 3539284211612254225
         - rid: 3539284211612254210
         - rid: 3539284211612254232
-    - rid: 3539284211612254219
-      type: {class: Log, ns: TheKiwiCoder, asm: Assembly-CSharp}
-      data:
-        state: 0
-        started: 0
-        guid: ce608cd8bf37c44c1a2ed794545e061c
-        position: {x: 105.47217, y: -441}
-        blackboard:
-          moveToPosition: {x: 0, y: 0, z: 0}
-          settings: {fileID: 0}
-        description: Enemy found!
-        drawGizmos: 0
-        message: Enemy in field of view
     - rid: 3539284211612254225
       type: {class: Repeat, ns: TheKiwiCoder, asm: Assembly-CSharp}
       data:
@@ -190,7 +173,7 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: 94b5d689c2e0e40e2b8f060d6ad814b7
-        position: {x: 312.49963, y: -803.9998}
+        position: {x: 312.5, y: -804}
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           settings: {fileID: 0}
@@ -354,7 +337,7 @@ MonoBehaviour:
         state: 0
         started: 0
         guid: 08bad23bd4f6d422f91b5f6f424d263c
-        position: {x: 284.50012, y: -444.49997}
+        position: {x: 260.5, y: -444.5}
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           settings: {fileID: 0}
@@ -362,15 +345,3 @@ MonoBehaviour:
         drawGizmos: 0
         child:
           rid: 3539284211612254212
-    - rid: 3539284542914297857
-      type: {class: CheckEnemyIsAlive, ns: Diwide.Ziggurat.BehaviourTree.Actions, asm: Assembly-CSharp}
-      data:
-        state: 0
-        started: 0
-        guid: 07fb7cbc1505749d88b0ff38fdd125b3
-        position: {x: -70.506714, y: -441}
-        blackboard:
-          moveToPosition: {x: 0, y: 0, z: 0}
-          settings: {fileID: 0}
-        description: 
-        drawGizmos: 0

@@ -28,18 +28,29 @@ namespace Diwide.Ziggurat.BehaviourTree.Actions
             switch (colliders.Length)
             {
                 case 1:
-                    blackboard.Target = colliders[0].gameObject;
+                    var unit = colliders[0].GetComponent<UnitFacade>();
+                    if (!unit.IsAlive) return State.Failure;
+                    
+                    Debug.Log($"{context.gameObject.name} at {context.transform.position} targeting {unit.gameObject.name} at {unit.transform.position}");
+                    // var distance = Vector3.Distance(context.transform.position, unit.transform.position);
+                    // if (distance > range * 2)
+                    // {
+                    //     Debug.Log($"{context.gameObject.name} target distance = {distance}");
+                    // }
+                    blackboard.Target = unit;
                     return State.Success;
                 case > 1:
                 {
-                    var closestCollider = colliders
+                    var closestUnit = colliders
                         .Select(collider => new
-                            {collider, distance = Vector3.Distance(context.transform.position, collider.transform.position)}
+                            {facade = collider.GetComponent<UnitFacade>(), distance = Vector3.Distance(context.transform.position, collider.transform.position)}
                         )
+                        .Where(_=> _.facade.IsAlive)
                         .OrderBy(_ => _.distance)
-                        .First().collider;
+                        .First().facade;
                     
-                    blackboard.Target = closestCollider.gameObject;
+                    Debug.Log($"{context.gameObject.name} at {context.transform.position} targeting {closestUnit.gameObject.name} at {closestUnit.transform.position} from {colliders.Length}");
+                    blackboard.Target = closestUnit;
                     return State.Success;
                 }
                 default:

@@ -18,7 +18,7 @@ namespace Diwide.Ziggurat.BehaviourTree.Decorators
 
         protected override State OnUpdate()
         {
-            if (blackboard.Target == null) return State.Failure;
+            if (!blackboard.HasTarget()) return State.Failure;
             
             var prevPosition = blackboard.moveToPosition;
             blackboard.moveToPosition = blackboard.Target.transform.position;
